@@ -1,0 +1,340 @@
+/*
+532e17    brown
+*/
+@font-face {
+    font-family: Modern20;
+    src: url(../fonts/modern-no-20.ttf);
+}
+body {
+/*    font-family: 'Playfair Display', serif;*/
+    font-family: 'Modern20', serif;
+    padding-bottom: 20px;
+}
+p {
+/*    font-family: 'Roboto Slab', serif;*/
+    font-family: 'Droid Sans', sans-serif;
+}
+h2 {
+    font-size: 1.3em;
+    margin: 8px 0;
+    margin-left: 43px;
+    text-transform: uppercase;
+}
+h3 {
+    margin: 6px 0;
+}
+h4 {
+    margin: 6px 0;
+}
+ul {
+    list-style-type: none;
+}
+a:link, a:visited {
+    color: #000;
+}
+a:hover, a:active {
+    color: #ff7000;
+    text-decoration: none;
+}
+a.active {
+    color: #ff7000;
+}
+.divider {
+    border-bottom: 1px solid #000;
+}
+.heading-divider {
+    border-bottom: 1px solid #ccc;
+}
+.indent {
+    margin-left: 43px;
+}
+.center {
+    text-align: center;
+}
+.page h1 > a:hover {
+    color: #000;
+}
+
+/**********************
+  Boxes
+ **********************/
+.boxes {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+}
+.boxes.last {
+    border-bottom: 0px;
+}
+.box {
+    margin: 20px 0;
+}
+
+.box .box-heading {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.box p {
+    margin: 0;
+}
+
+
+/***************************
+ Header
+****************************/
+/*
+header {
+    border-bottom: 1px solid #000;
+}
+*/
+header img {
+    height: 32px;
+    float: left;
+    margin-top: 7px;
+}
+header  h1 {
+    font-size: 1.6em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+/*    transform: scale(1, 0.9);*/
+    letter-spacing: 1px;
+}
+
+
+
+/***************************
+  Main Navigation
+****************************/
+header nav {
+    float: right;
+    margin-top: 14px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
+header nav li {
+    display: inline;
+    margin-left: 10px;
+}
+
+
+/**********************
+  Carousel
+ **********************/
+#carousel {
+    margin-top: 20px;
+}
+.slider {
+    position: relative;
+}
+.slider .slider-item img {
+    min-width: 100%;
+/*    height: 400px;*/
+    background: #eee;
+    box-shadow: 6px 6px 6px #888, 
+                12px 12px 18px #aaa;
+}
+.slider-text {
+    font-size: 0.9em;
+    color: #fff;
+    width: 600px;
+    height: 120px;
+    padding: 0 0 10px 20px;
+    position: absolute;
+    bottom: 0px;
+}
+.slider .slider-item div p {
+}
+.slider .heading-text {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+
+/**********************
+  Home Page
+ **********************/
+/*
+.info-box > div {
+    box-shadow: 0 0 0 2px #111,
+                0 0 0 8px #4a2b01,
+                0 0 0 11px #241501,
+                0 0 0 17px #4a2b01;
+}
+*/
+#info-boxes {
+/*    margin-bottom: 30px;*/
+}
+.info-box {
+/*    position: relative;*/
+    text-align: center;
+}
+/*
+.info-box .info-box-image {
+    position: absolute;
+        top: -110px;
+        left: 2px;
+    z-index: -1
+}
+*/
+.info-box .fa {
+    font-size: 6em;
+    color: #555;
+}
+#info-boxes .info-box .box-heading {
+    margin: 30px 0 10px 0;
+    font-family: Modern20, serif;
+    font-size: 3em;
+    color: #333;
+}
+
+#info-boxes .info-box p {
+/*    font-size: 0.8em;*/
+    font-weight: bold;
+    padding: 2px 24px;
+}
+.info-box .button-link {
+    display: inline-block;
+    font-size: 1.6em;
+    color: #eee;
+    background: #4a2b01;
+    width: 150px;
+    margin-top: 4px;
+    padding: 3px 12px;
+    border-radius: 8px;
+}
+.info-box a {
+    text-align: center;
+}
+.info-box-button-icon {
+    position: absolute;
+        bottom: 3px;
+        right: 20px;
+}
+
+
+/**********************
+  Art Shows
+ **********************/
+#artshows section:not(:nth-of-type(2)) h3 {
+    text-transform: uppercase;
+}
+
+#artshows a > .box > img {
+    opacity: 0.9;
+}
+#artshows .box img:hover {
+    opacity: 1;
+}
+#artshows h2 {
+    margin-left: 43px;
+    text-transform: uppercase;
+}
+#artshows h3 {
+    margin-left: 43px;
+}
+#artshows h4 {
+    margin-bottom: 0;
+}
+
+
+/**********************
+  Classes
+ **********************/
+#classes .box img {
+    width: 100%;
+}
+/**********************
+  About
+ **********************/
+#about img {
+    text-align: center;
+}
+
+/**********************
+  Footer
+ **********************/
+footer {
+    margin-top: 30px;
+}
+footer > div:first-child > div {
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+footer p {
+    margin: 8px;
+/*    font-size: 0.8em;*/
+    line-height: 1.2em;
+    font-weight: bold;
+}
+footer #social-icons {
+    font-size: 1.3em;
+    margin-top: 0;
+}
+.fa-facebook-square {color: #00f;}
+.fa-twitter-square {color: #0b67fa;}
+.fa-google-plus-square {color: #b00;}
+.fa-youtube-square {color: #b00;}
+.fa-instagram {color: #2323ff;}
+
+/* Line up last line of footer text with the bottom of social-icons
+   and the subscribe form */
+footer > div:nth-child(3) p:nth-child(2):not(#social-icons) {
+    padding-top: 6px;
+}
+
+footer form {
+    margin: 8px;
+}
+footer form input {
+/*    font-size: 0.8em;*/
+}
+#subscribe-thankyou {
+    display: none;
+}
+#subscribe-form {
+    font-size: 0.8em;
+    width: 184px;
+    margin-bottom: 0;
+    position: relative;
+}
+#subscribe-form .field {
+    border-bottom: 1px solid #656565;
+}
+#subscribe-form input {
+    border: 1px solid #fff;
+    width: 150px;
+    line-height: 1.8em;
+}
+#subscribe-form input:focus {
+    outline: 0px;
+}
+#subscribe-form button {
+    background: #fff;
+    border: 0 solid;
+    position: absolute;
+    bottom: 1px;
+    right: 0px;
+}
+
+
+/***************************
+  Media Queries
+****************************/
+
+@media (max-width: 768px) {
+    .hidden-xsm {
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    
+}
+@media (max-width: 992px) {
+    .hidden-sm {
+        display: none;
+    }
+}
+@media (min-width: 992px) {
+  
+}
