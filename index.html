@@ -16,6 +16,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="SlickNav/slicknav.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link href="css/custom.css" rel="stylesheet">
@@ -33,13 +34,14 @@
     <main id="home">
         <header class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-5">
+                <div class="col-md-5 col-sm-12 company-name">
                     <img src="images/RAC_logo.png" alt="#">
                     <h1>Riverside Art Center</h1>
                 </div>
-                <div class="col-md-7 col-sm-7">
+                
+                <div class="col-sm-7">
                     <nav>
-                        <ul>
+                        <ul id="menu">
                             <li><a href="index.html" class="active">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="artshows.html">Art Shows</a></li>
@@ -57,8 +59,8 @@
         
         <section class="jumbotron container">
            
-            <div id="carousel" class="row">
-                <div class="col-md-12 col-sm-12">
+            <div id="carousel" class="row  hidden-xsm">
+                <div class="col-md-12">
                     <div class="slider">
                        
                         <div class="slider-item">
@@ -147,7 +149,7 @@
            
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
                          <p>
                               Riverside Art Center<br>
                               3 W Auglaize St.<br>
@@ -161,7 +163,7 @@
                             <span class="fa fa-instagram"></span>
                         </p>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
                         <p>
                             Riverside Art Center<br>
                             PO Box 37<br>
@@ -169,7 +171,7 @@
                         </p>
                         <p>riversideartcenter@gmail.com</p>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
                         <p>
                             Wednesday - Friday<br>
                             10am - 4pm<br>
@@ -177,7 +179,7 @@
                         </p>
                         <p>419-738-2524</p>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
                             <div id="subscribe-thankyou"><p>Thank You</p></div>
                             <form id="subscribe-form" action="#">
                                 <div class="field">
@@ -205,6 +207,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
+    
     <!-- Slick Slider -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
@@ -215,8 +218,14 @@
               dots: true
           });
         });
-  </script>
-  <script src="js/subscribe-thankyou.js"></script>
+    </script>
+    <script src="js/subscribe-thankyou.js"></script>
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
+    <script>
+        $(function(){
+            $('#menu').slicknav();
+        });
+    </script>
 </body>
 
 </html>

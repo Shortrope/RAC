@@ -12,10 +12,11 @@
 
     <title>Riverside Art Center</title>
 
-    <!-- Bootstrap core CSS, Grid only-->
+    <!-- Bootstrap CSS, Grid only-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="SlickNav/slicknav.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link href="css/custom.css" rel="stylesheet">
@@ -33,13 +34,14 @@
     <main id="contact" class="page">
         <header class="container">
             <div class="row">
-                <div class="col-md-5 col-sm-5">
+                <div class="col-md-5 col-sm-12 company-name">
                     <img src="images/RAC_logo.png" alt="#">
                     <h1><a href="index.html">Riverside Art Center</a></h1>
                 </div>
-                <div class="col-md-7 col-sm-7">
+                
+                <div class="col-sm-7">
                     <nav>
-                        <ul>
+                        <ul id="menu">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="artshows.html">Art Shows</a></li>
@@ -232,6 +234,12 @@
     <script src="js/ie10-viewport-bug-workaround.js"></script>
     
     <script src="js/subscribe-thankyou.js"></script>
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
+    <script>
+        $(function(){
+            $('#menu').slicknav();
+        });
+    </script>
 </body>
 
 </html>  
