@@ -148,19 +148,21 @@ header nav li {
     font-size: 1.5em;
     margin-bottom: 0;
 }
+/*
+.slick-prev, .slick-next {
+    color: #000;
+}
+*/
+/*
+#carousel {
+    box-shadow: 6px 6px 6px #777;
+}
+*/
 
 
 /**********************
   Home Page
  **********************/
-/*
-.info-box > div {
-    box-shadow: 0 0 0 2px #111,
-                0 0 0 8px #4a2b01,
-                0 0 0 11px #241501,
-                0 0 0 17px #4a2b01;
-}
-*/
 #info-boxes {
 /*    margin-bottom: 30px;*/
 }
@@ -181,7 +183,7 @@ header nav li {
     color: #555;
 }
 #info-boxes .info-box .box-heading {
-    margin: 30px 0 10px 0;
+    margin: 10px 0 0px 0;
     font-family: Modern20, serif;
     font-size: 3em;
     color: #333;
@@ -195,15 +197,20 @@ header nav li {
 .info-box .button-link {
     display: inline-block;
     font-size: 1.6em;
-    color: #eee;
-    background: #4a2b01;
+    background: #fff;
     width: 150px;
-    margin-top: 4px;
+    margin-top: 20px;
     padding: 3px 12px;
+    border: 1px solid #888;
     border-radius: 8px;
 }
 .info-box a {
     text-align: center;
+}
+.info-box a:hover {
+    font-weight: bold;
+    background: #e3e3e3;
+    border: 1px solid #222;
 }
 .info-box-button-icon {
     position: absolute;
