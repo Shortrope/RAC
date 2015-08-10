@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <meta name="description" content="Riverside Art Center">
     <meta name="author" content="Team 4">
     <link rel="icon" href="images/favicon.ico">
@@ -17,52 +17,69 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="SlickNav/slicknav.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link href="css/custom.css" rel="stylesheet">
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
+
 </head>
 
 <body>
-    
+
     <main id="home">
         <header class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 company-name">
-                    <img src="images/RAC_logo.png" alt="#">
+                    <img src="images/RAC_logo.png" alt="RAC Logo">
                     <h1>Riverside Art Center</h1>
                 </div>
-                
+
                 <div class="col-sm-7">
                     <nav>
                         <ul id="menu">
-                            <li><a href="index.html" class="active">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="artshows.html">Art Shows</a></li>
-                            <li><a href="donate.html">Donate</a></li>
-                            <li><a href="classes.html">Classes</a></li>
-                            <li><a href="membership.html">Membership</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="index.html" class="active">Home</a>
+                            </li>
+                            <li><a href="about.html">About</a>
+                            </li>
+                            <li><a href="artshows.html">Art Shows</a>
+                                <ul class="subnav">
+                                    <li><a href="past_shows.html">Past Shows</a></li>
+                                    <li><a href="childrens_shows">Childrens Shows</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="donate.html">Donate</a>
+                                <ul class="subnav">
+                                    <li><a href="donate.html">Donate</a></li>
+                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="classes.html">Classes</a>
+                            </li>
+                            <li><a href="membership.html">Membership</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a>
+                            </li>
                         </ul>
                     </nav>
-                </div><!--.row-->
+                </div>
+                <!--.row-->
             </div>
-        </header><!--.container-->
-        
+        </header>
+        <!--.container-->
+
         <div class="divider"></div>
-        
+
         <section class="jumbotron container">
-           
+
             <div id="carousel" class="row  hidden-xsm">
                 <div class="col-md-12">
                     <div class="slider">
-                       
+
                         <div class="slider-item">
                             <img src="images/carousel1.jpg" alt="#">
                             <div class="slider-text">
@@ -70,16 +87,16 @@
                                 <p>June 12th – August 21st</p>
                             </div>
                         </div>
-                        
+
                         <div class="slider-item">
                             <img src="images/carousel2.jpg" alt="#">
                             <div class="slider-text">
                                 <p class="heading-text">8th Annual Greater-area Community Art Exhibit</p>
                                 <p>August 16th, 6 – 9pm
-        </p>
+                                </p>
                             </div>
                         </div>
-                        
+
                         <div class="slider-item">
                             <img src="images/carousel3.jpg" alt="#">
                             <div class="slider-text">
@@ -87,75 +104,140 @@
                                 <p>June 12th – August 21st</p>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-            </div><!--#carousel .row-->
-            
+            </div>
+            <!--#carousel .row-->
+
             <div id="info-boxes" class="row">
                 <div class="col-md-4 col-sm-4">
                     <div class="box info-box">
                         <div>
-<!--                            <img class="info-box-image" src="images/classes.jpg" alt="#">-->
-                            <p class="icon"><span class="fa fa-pencil"></span></p>
+                            <!--                            <img class="info-box-image" src="images/classes.jpg" alt="#">-->
+                            <p class="icon"><span class="fa fa-pencil"></span>
+                            </p>
                             <p class="box-heading">Classes</p>
                         </div>
                         <p>We offer many classes in oil and water based painting as well as pottery and...</p>
-                        <div><a class="button-link" href="contact.html">Classes</a></div>
-<!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
+                        <div><a class="button-link" href="classes.html">Classes</a>
+                        </div>
+                        <!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4">
                     <div class="box info-box">
                         <div>
-<!--                            <img class="info-box-image" src="images/donate.jpg" alt="#">-->
-                            <p class="icon"><span class="fa fa-gift"></span></p>
+                            <!--                            <img class="info-box-image" src="images/donate.jpg" alt="#">-->
+                            <p class="icon"><span class="fa fa-gift"></span>
+                            </p>
                             <p class="box-heading">Donate</p>
                         </div>
                         <p>We thank for all your support. We cannot survive with out your kindness and...</p>
-                        <div><a class="button-link" href="contact.html">Donate</a></div>
-<!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
+                        <div><a class="button-link" href="donate.html">Donate</a>
+                        </div>
+                        <!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-4">
-                    <div class="box info-box four columns">
+                    <div class="box info-box">
                         <div>
-<!--                            <img class="info-box-image" src="images/location.jpg" alt="#">-->
-                            <p class="icon"><span class="fa fa-map-signs"></span></p>
+                            <!--                            <img class="info-box-image" src="images/location.jpg" alt="#">-->
+                            <p class="icon"><span class="fa fa-map-signs"></span>
+                            </p>
                             <p class="box-heading">Location</p>
                         </div>
                         <p>We are located at 3 W. Auglaize St. Wapakoneta, OH. 45895. Our hours...</p>
-                        <div><a class="button-link" href="contact.html">Location</a></div>
-<!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
+                        <div><a class="button-link" href="contact.html">Location</a>
+                        </div>
+                        <!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
                     </div>
                 </div>
-            </div><!--#info-boxes .row-->
-            
-        </section><!--.container-->    
-            
-            
+            </div>
+            <!--#info-boxes .row-->
+
+        </section>
+        <!--.container-->
+
+
         <footer>
             <div class="divider"></div>
-            <div class="container">
+            <div class="container footer-heading-lg">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3"><p>Contact</p></div>
-                    <div class="col-md-3 col-sm-3"><p>Mailing Address</p></div>
-                    <div class="col-md-3 col-sm-3"><p>Gallery Hours</p></div>
-                    <div class="col-md-3 col-sm-3"><p>Subscribe</p></div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Contact</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Mailing Address</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Gallery Hours</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Subscribe</p>
+                    </div>
                 </div>
-            </div><!--.container-->
-            
+            </div>
+            <!--.container-->
+
             <div class="divider"></div>
-           
+
             <div class="container">
                 <div class="row">
                     <div class="col-sm-3">
-                         <p>
-                              Riverside Art Center<br>
-                              3 W Auglaize St.<br>
-                              Wapakoneta, OH. 45895
-                         </p>
-                         <p id="social-icons">
+                        <p class="footer-heading">Contact</p>
+                        <p>
+                            Riverside Art Center
+                            <br> 3 W Auglaize St.
+                            <br> Wapakoneta, OH. 45895
+                        </p>
+                        <p>
+                            419-738-2524
+                            <br> riversideartcenter@gmail.com
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Mailing Address</p>
+                        <p>
+                            Riverside Art Center
+                            <br> PO Box 37
+                            <br> Wapakoneta, OH. 45895
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Gallery Hours</p>
+                        <p>
+                            Wednesday - Friday
+                            <br> 10am - 4pm
+                            <br> Sat 12pm - 4pm
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="subscribe-thankyou">
+                            <p>Thank You</p>
+                        </div>
+                        <form id="subscribe-form" action="#">
+                            <div class="field">
+                                <input type="text" id="fname" placeholder="First Name">
+                            </div>
+                            <div class="field">
+                                <input type="text" id="lname" placeholder="Last Name">
+                            </div>
+                            <div class="field">
+                                <input type="text" id="email" placeholder="Email Address">
+                            </div>
+                            <button id="subscribe-submit" type="submit"><span class="fa fa-chevron-right"></span>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+                <!--.row-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p id="social-icons">
                             <span class="fa fa-facebook-square"></span>
                             <span class="fa fa-twitter-square"></span>
                             <span class="fa fa-google-plus-square"></span>
@@ -163,43 +245,12 @@
                             <span class="fa fa-instagram"></span>
                         </p>
                     </div>
-                    <div class="col-sm-3">
-                        <p>
-                            Riverside Art Center<br>
-                            PO Box 37<br>
-                            Wapakoneta, OH. 45895
-                        </p>
-                        <p>riversideartcenter@gmail.com</p>
-                    </div>
-                    <div class="col-sm-3">
-                        <p>
-                            Wednesday - Friday<br>
-                            10am - 4pm<br>
-                            Sat 12pm - 4pm
-                        </p>
-                        <p>419-738-2524</p>
-                    </div>
-                    <div class="col-sm-3">
-                            <div id="subscribe-thankyou"><p>Thank You</p></div>
-                            <form id="subscribe-form" action="#">
-                                <div class="field">
-                                    <input type="text" id="fname" placeholder="First Name">
-                                </div>
-                                <div class="field">
-                                    <input type="text" id="lname" placeholder="Last Name">
-                                </div>
-                                <div class="field">
-                                    <input type="text" id="email" placeholder="Email Address">
-                                </div>
-                                <button id="subscribe-submit" type="submit"><span class="fa fa-chevron-right"></span></button>
-                            </form>
-                            
-                    </div>
                 </div>
-            </div><!--.container-->
-            
+            </div>
+            <!--.container-->
+
         </footer>
-        
+
     </main>
 
 
@@ -207,22 +258,22 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    
+
     <!-- Slick Slider -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slider').slick({
-//              autoplay: true,
-              arrows: true,
-              dots: true
-          });
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                arrows: true,
+                dots: true
+            });
         });
     </script>
     <script src="js/subscribe-thankyou.js"></script>
     <script src="SlickNav/jquery.slicknav.min.js"></script>
     <script>
-        $(function(){
+        $(function () {
             $('#menu').slicknav();
         });
     </script>

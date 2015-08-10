@@ -45,18 +45,6 @@ a:hover, a:active {
 a.active {
     color: #ff7000;
 }
-.divider {
-    border-bottom: 1px solid #000;
-}
-.heading-divider {
-    border-bottom: 1px solid #ccc;
-}
-.indent {
-    margin-left: 43px;
-}
-.center {
-    text-align: center;
-}
 .page h1 > a:hover {
     color: #000;
 }
@@ -74,7 +62,10 @@ a.active {
 .box {
     margin: 20px 0;
 }
-
+.box img {
+    width: 100%;
+    height: auto;
+}
 .box .box-heading {
     font-size: 1.1em;
     font-weight: bold;
@@ -106,6 +97,7 @@ x.company-name {
 .slicknav_menu {
     display: none;
     background: #fff;
+    xfloat: right;
 }
 .slicknav_nav a {
     text-align: center;
@@ -118,10 +110,32 @@ header nav {
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 1px;
+    
 }
 header nav li {
+    position: relative;/*help position .subnav*/
     display: inline;
     margin-left: 10px;
+}
+header nav .subnav {
+    display: none;
+    padding-top: 6px;
+}
+header nav li:hover .subnav {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -58px;
+}
+header nav .subnav li {
+    display: block;
+    float: none;
+    background: rgba(255,255,255, 0.85);
+    border-radius: 3px;
+    padding: 4px 4px 2px 14px;
+    min-height: 6px;
+    width: 145px;
+    z-index: 4;
 }
 
 
@@ -135,7 +149,8 @@ header nav li {
     position: relative;
 }
 .slider .slider-item img {
-    min-width: 100%;
+    width: 100%;
+    height: auto;
     background: #eee;
     box-shadow: 6px 6px 6px #888, 
                 12px 12px 18px #aaa;
@@ -255,8 +270,10 @@ header nav li {
 /**********************
   About
  **********************/
-#about img {
+#about section img {
     text-align: center;
+    width: 100%;
+    height: auto;
 }
 
 /**********************
@@ -269,6 +286,11 @@ footer > div:first-child > div {
     font-weight: bold;
     font-size: 1.1em;
     text-transform: uppercase;
+}
+footer .footer-heading {
+    display: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #aaa;
 }
 footer p {
     margin: 8px;
@@ -303,7 +325,6 @@ footer form input {
 }
 #subscribe-form {
     font-size: 0.8em;
-    width: 184px;
     margin-bottom: 0;
     position: relative;
 }
@@ -327,16 +348,98 @@ footer form input {
 }
 
 
+/**********************
+  Other
+ **********************/
+.divider {
+    border-bottom: 1px solid #000;
+}
+.heading-divider {
+    border-bottom: 1px solid #ccc;
+}
+.indent {
+    margin-left: 43px;
+}
+.center {
+    text-align: center;
+}
+.show-heading:hover > h2 {
+    color: #ff7000;
+    cursor: pointer;
+}
+
+.show-images {
+    
+}
+.open {
+    height: 538px;
+    overflow: visible;
+}
+.closed {
+    height: 0px;
+    overflow: hidden;
+}
+.arrow-right {
+    display: inline-block;
+    width: 0; 
+	height: 0; 
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 12px solid #444;
+}
+.arrow-down {
+    display: inline-block;
+    width: 0px; 
+	height: 0; 
+	border-top: 12px solid #444;
+	border-right: 8px solid transparent;
+	border-left: 8px solid transparent;
+}
+
+
 /***************************
   Media Queries
 ****************************/
+@media (max-width: 480px) {
+    .hidden-xsm,
+    #about section img,
+    #contact section img {
+        display: none;
+    }
+    
+}
 
 @media (max-width: 768px) {
-    .hidden-xsm {
+    
+    header img {
+        margin-top: -8px;
+    }
+    .info-box {
+        margin-bottom: 30px;
+        border-top: 1px solid #aaa;
+    }
+    footer {
+        text-align: center;
+    }
+    footer .footer-heading {
+        display: block;
+        font-size: 1em;
+        font-weight: bold;
+        margin-top: 28px;
+    }
+    footer .footer-heading-lg {
         display: none;
+    }
+    #subscribe-form {
+        display: none;
+    }
+    #social-icons {
+        border-top: 1px solid #aaa;
+        padding-top: 18px;
     }
 }
 @media (min-width: 768px) {
+    
     
 }
 @media (max-width: 992px) {
