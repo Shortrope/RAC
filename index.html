@@ -31,7 +31,7 @@
 
 <body>
 
-    <main id="home">
+    <main id="home" class="page">
         <header class="container">
             <div class="row">
                 <div class="col-md-5 col-sm-12 company-name">
@@ -48,14 +48,18 @@
                             </li>
                             <li><a href="artshows.html">Art Shows</a>
                                 <ul class="subnav">
-                                    <li><a href="past_shows.html">Past Shows</a></li>
-                                    <li><a href="childrens_shows.html">Childrens Shows</a></li>
+                                    <li><a href="past_shows.html">Past Shows</a>
+                                    </li>
+                                    <li><a href="childrens_shows.html">Childrens Shows</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="donate.html">Donate</a>
                                 <ul class="subnav">
-                                    <li><a href="donate.html">Donate</a></li>
-                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                    <li><a href="donate.html">Donate</a>
+                                    </li>
+                                    <li><a href="volunteer.html">Volunteer</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="classes.html">Classes</a>
@@ -74,7 +78,7 @@
 
         <hr class="divider">
 
-        <section class="jumbotron container">
+        <section class="container">
 
             <div id="carousel" class="row  hidden-xsm">
                 <div class="col-md-12">
@@ -111,10 +115,10 @@
             <!--#carousel .row-->
 
             <div id="info-boxes" class="row">
+
                 <div class="col-md-4 col-sm-4">
                     <div class="box info-box">
                         <div>
-                            <!--                            <img class="info-box-image" src="images/classes.jpg" alt="#">-->
                             <p class="icon"><span class="fa fa-pencil"></span>
                             </p>
                             <p class="box-heading">Classes</p>
@@ -122,13 +126,12 @@
                         <p>We offer many classes in oil and water based painting as well as pottery and...</p>
                         <div><a class="button-link" href="classes.html">Classes</a>
                         </div>
-                        <!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-4">
                     <div class="box info-box">
                         <div>
-                            <!--                            <img class="info-box-image" src="images/donate.jpg" alt="#">-->
                             <p class="icon"><span class="fa fa-gift"></span>
                             </p>
                             <p class="box-heading">Donate</p>
@@ -136,13 +139,12 @@
                         <p>We thank for all your support. We cannot survive with out your kindness and...</p>
                         <div><a class="button-link" href="donate.html">Donate</a>
                         </div>
-                        <!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
                     </div>
                 </div>
+
                 <div class="col-md-4 col-sm-4">
                     <div class="box info-box">
                         <div>
-                            <!--                            <img class="info-box-image" src="images/location.jpg" alt="#">-->
                             <p class="icon"><span class="fa fa-map-signs"></span>
                             </p>
                             <p class="box-heading">Location</p>
@@ -150,9 +152,9 @@
                         <p>We are located at 3 W. Auglaize St. Wapakoneta, OH. 45895. Our hours...</p>
                         <div><a class="button-link" href="contact.html">Location</a>
                         </div>
-                        <!--                        <img class="info-box-button-icon" src="images/pallette2.png" alt="#">-->
                     </div>
                 </div>
+
             </div>
             <!--#info-boxes .row-->
 
@@ -212,8 +214,8 @@
                             <br> 10am - 4pm
                             <br> Sat 12pm - 4pm
                         </p>
-
                     </div>
+
                     <div class="col-sm-3">
                         <div id="subscribe-thankyou">
                             <p>Thank You</p>
@@ -235,6 +237,7 @@
                     </div>
                 </div>
                 <!--.row-->
+
                 <div class="row">
                     <div class="col-sm-12">
                         <p id="social-icons">
@@ -246,6 +249,7 @@
                         </p>
                     </div>
                 </div>
+                <!--.row-->
             </div>
             <!--.container-->
 
@@ -261,6 +265,10 @@
 
     <!-- Slick Slider -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="js/subscribe-thankyou.js"></script>
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
+
     <script type="text/javascript">
         $(document).ready(function () {
             $('.slider').slick({
@@ -268,12 +276,6 @@
                 arrows: true,
                 dots: true
             });
-        });
-    </script>
-    <script src="js/subscribe-thankyou.js"></script>
-    <script src="SlickNav/jquery.slicknav.min.js"></script>
-    <script>
-        $(function () {
             $('#menu').slicknav();
         });
     </script>

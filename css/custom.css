@@ -273,6 +273,10 @@ header nav .subnav li {
     border-top: 1px solid #ccc;
     background: #fff;
 }
+.ui-widget-content {
+    background: #fff;
+    border: 0px solid;
+}
 
 
 /**********************
