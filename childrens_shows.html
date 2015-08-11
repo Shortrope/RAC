@@ -13,6 +13,7 @@
     <title>Riverside Art Center</title>
 
     <!-- Bootstrap CSS, Grid only-->
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -20,7 +21,9 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/jquery-ui.css" />
-    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/custom.css">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -71,7 +74,7 @@
         <section>
                
             <div class="container">
-                <h2>Childrens Shows</h2>
+                <h2 class="indent">Childrens Shows</h2>
             </div>
             <hr class="heading-divider">
 
@@ -89,59 +92,77 @@
             <div class="container">
                 <div id="accordion">
                    
-                    <h3><span class=""></span>&nbsp; 2015 Photography Show</h3>
+                    <h3 class="indent"><span class=""></span>&nbsp; 2015 Photography Show</h3>
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="box">
-                                    <img src="images/currentShow1.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow1.jpg">
+                                        <img src="images/currentShow1.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-4 ">
                                 <div class="box">
-                                    <img src="images/currentShow2.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow2.jpg">
+                                        <img src="images/currentShow2.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-4 ">
                                 <div class="box">
-                                    <img src="images/currentShow3.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow3.jpg">
+                                        <img src="images/currentShow3.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                         </div><!--.row-->
 
-                    <h3><span class=""></span>&nbsp; 2014 Art Show</h3>
+                    <h3 class="indent"><span class=""></span>&nbsp; 2014 Art Show</h3>
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="box">
-                                    <img src="images/currentShow1.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow1.jpg">
+                                        <img src="images/currentShow1.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-4 ">
                                 <div class="box">
-                                    <img src="images/currentShow2.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow2.jpg">
+                                        <img src="images/currentShow2.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-4 ">
                                 <div class="box">
-                                    <img src="images/currentShow3.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow3.jpg">
+                                        <img src="images/currentShow3.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                         </div><!--.row-->
 
-                    <h3><span class=""></span>&nbsp; 2011 Juried Art Show</h3>
+                    <h3 class="indent"><span class=""></span>&nbsp; 2011 Juried Art Show</h3>
                         <div class="row">
                             <div class="col-sm-4">
                                 <div class="box">
-                                    <img src="images/currentShow1.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow1.jpg">
+                                        <img src="images/currentShow1.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-4 ">
                                 <div class="box">
-                                    <img src="images/currentShow2.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow2.jpg">
+                                        <img src="images/currentShow2.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-sm-4 ">
                                 <div class="box">
-                                    <img src="images/currentShow3.jpg" alt="#">
+                                    <a class="fancybox" rel="group" href="images/currentShow3.jpg">
+                                        <img src="images/currentShow3.jpg" alt="#">
+                                    </a>
                                 </div>
                             </div>
                         </div><!--.row-->
@@ -225,18 +246,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
-    
+    <!--.js for subscribe form in footer-->
     <script src="js/subscribe-thankyou.js"></script>
+    <!--SlickNav-->
     <script src="SlickNav/jquery.slicknav.min.js"></script>
     <script>
         $(function(){
             $('#menu').slicknav();
         });
     </script>
+    <!--jQuery Accordion-->
     <script src="js/jquery-ui.min.js"></script>
     <script>
         $(function() {
             $( "#accordion" ).accordion();
+        });
+    </script>
+    <!--jQuery Lightbox-->
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                padding : 0,
+                arrows : true
+            });
         });
     </script>
 </body>
