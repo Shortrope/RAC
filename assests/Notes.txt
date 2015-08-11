@@ -1,0 +1,12 @@
+jQuery Plugins
+    Slick: Carousel on home page
+    SlickNav: Mobile menu
+    jQuery UI: Accordion - Past Shows
+    FancyBox: Lightbox - Past Shows
+
+Custom jQuery: 
+    Subscribe form in footer
+    Handles transition to 'Thank You'
+               
+Custom CSS: 
+    Main menu drop downs

@@ -49,6 +49,7 @@ a.active {
     color: #000;
 }
 
+
 /**********************
   Boxes
  **********************/
@@ -82,12 +83,6 @@ header img {
     height: 32px;
     float: left;
     margin-top: 7px;
-}
-x.company-name {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
 }
 
 
@@ -262,10 +257,40 @@ header nav .subnav li {
 
 
 /**********************
+  Past Shows
+ **********************/
+/*override jquery ui accordion*/
+#past-shows h3 {
+    color: #333;
+    font-family: modern20, serif;
+    font-size: 1.3em;
+    margin: 8px 0;
+    margin-left: 43px;
+    text-transform: uppercase;
+}
+#past-shows h3:hover {
+    color: #ff7000;
+}
+#past-shows h3:focus {
+    outline: 0px solid;
+    color: #ff7000;
+}
+.ui-state-default {
+    border: 0px solid;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    background: #fff;
+}
+
+
+/**********************
   Classes
  **********************/
 #classes .box img {
     width: 100%;
+}
+#classes #calendar div#warningBox {
+    display: none;
 }
 /**********************
   About
@@ -351,6 +376,9 @@ footer form input {
 /**********************
   Other
  **********************/
+hr {
+    margin: 0;
+}
 .divider {
     border-bottom: 1px solid #000;
 }
@@ -363,7 +391,8 @@ footer form input {
 .center {
     text-align: center;
 }
-.show-heading:hover > h2 {
+.show-heading:hover > h2,
+.show-heading:hover > h3 {
     color: #ff7000;
     cursor: pointer;
 }
