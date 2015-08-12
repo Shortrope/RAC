@@ -90,84 +90,89 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="fname">*First Name:</label>
-                            <input type="text" maxlength="50" id="fname" name="fname" autofocus required>
-                            <br>
-                            <label for="mname">Middle Name:</label>
-                            <input type="text" maxlength="50" id="mname" name="mname" >
-                            <br>
-                            <label for="lname">*Last Name</label>
-                            <input type="text" maxlength="50" id="lname" name="lname" required>
-                            <br>
-                            <label for="street1">*Street 1:</label>
-                            <input type="address" id="street1" name="street1" required>
-                            <br>
-                            <label for="street2">Street 2:</label>
-                            <input type="address" id="street2" name="street2">
-                            <br>
-                            <label for="city">*City:</label>
-                            <input type="text" id="city" name="city" required>
-                            <br>
-                            <label for="state">*State/Provence:</label>
-                            <input type="text" id="state" name="state" required>
-                            <br>
-                            <label for="zip">*ZIP Postal Code:</label>
-                            <input type="text" id="zip" name="zip" required>
-                            <br>
-                            <label for="phone">Phone Number:</label>
-                            <input type="text" id="phone" name="phone">
-                            <br>
-                            <label for="email">*Email Address:</label>
-                            <input type="text" id="email" name="email" required>
-                            <br>
+                            <div class="form-pi">
+                                <label for="fname"><span class="required">*</span>First Name:</label>
+                                <input type="text" maxlength="50" id="fname" name="fname" autofocus required>
+                                <br>
+                                <label for="mname">Middle Name:</label>
+                                <input type="text" maxlength="50" id="mname" name="mname" >
+                                <br>
+                                <label for="lname"><span class="required">*</span>Last Name</label>
+                                <input type="text" maxlength="50" id="lname" name="lname" required>
+                                <br>
+                                <label for="street1"><span class="required">*</span>Street 1:</label>
+                                <input type="address" id="street1" name="street1" required>
+                                <br>
+                                <label for="street2">Street 2:</label>
+                                <input type="address" id="street2" name="street2">
+                                <br>
+                                <label for="city"><span class="required">*</span>City:</label>
+                                <input type="text" id="city" name="city" required>
+                                <br>
+                                <label for="state"><span class="required">*</span>State/Provence:</label>
+                                <input type="text" id="state" name="state" required>
+                                <br>
+                                <label for="zip"><span class="required">*</span>ZIP Postal Code:</label>
+                                <input type="text" id="zip" name="zip" required pattern="^[0-9]{5}(-[0-9]{4})?$">
+                                <br>
+                                <label for="phone">Phone Number:</label>
+                                <input type="text" id="phone" name="phone">
+                                <br>
+                                <label for="email"><span class="required">*</span>Email Address:</label>
+                                <input type="text" id="email" name="email" required 
+                                       pattern="[a-zA-Z0-9_-]{1}[a-zA-Z0-9.+%_-]*@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}">
+                                <br>
+                            </div>
 
-                            <p>Please indicate if you have experience with any of the following:</p>
-                            <br>
-                            <input type="checkbox" name="experience" id="data-entry" value="data-entry">
-                            <label for="data-entry">data entry</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="telephone" value="telephone">
-                            <label for="telephone">telephone operation</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="publishing" value="publishing">
-                            <label for="publishing">desktop/print publishing</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="bookkeeping" value="bookkeeping">
-                            <label for="bookkeeping">bookkeeping</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="graphic-design" value="graphic-design">
-                            <label for="graphic-design">graphic design</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="photography" value="photography">
-                            <label for="photography">professional photography</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="web" value="web">
-                            <label for="web">web design/maintenance</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="writing" value="writing">
-                            <label for="writing">writing/editing</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="fundraising" value="fundraising">
-                            <label for="fundraising">fundraising</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="event-planning" value="event-planning">
-                            <label for="event-planning">event planning/promotion</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="public-relations" value="public-relations">
-                            <label for="public-relations">public relations</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="sales" value="sales">
-                            <label for="sales">sales/service industry</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="cooking" value="cooking">
-                            <label for="cooking">cooking/baking</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="teaching" value="teaching">
-                            <label for="teaching">teaching/tutoring</label>
-                            <br>
-                            <input type="checkbox" name="experience" id="art-gallery" value="art-gallery">
-                            <label for="art-gallery">art gallery experience</label>
-                            <br>
+                            <div class="volunteer-form-checkboxes">
+                                <p>Please indicate if you have experience with any of the following:</p>
+                                <br>
+                                <input type="checkbox" name="experience" id="data-entry" value="data-entry">
+                                <label for="data-entry">data entry</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="telephone" value="telephone">
+                                <label for="telephone">telephone operation</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="publishing" value="publishing">
+                                <label for="publishing">desktop/print publishing</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="bookkeeping" value="bookkeeping">
+                                <label for="bookkeeping">bookkeeping</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="graphic-design" value="graphic-design">
+                                <label for="graphic-design">graphic design</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="photography" value="photography">
+                                <label for="photography">professional photography</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="web" value="web">
+                                <label for="web">web design/maintenance</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="writing" value="writing">
+                                <label for="writing">writing/editing</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="fundraising" value="fundraising">
+                                <label for="fundraising">fundraising</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="event-planning" value="event-planning">
+                                <label for="event-planning">event planning/promotion</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="public-relations" value="public-relations">
+                                <label for="public-relations">public relations</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="sales" value="sales">
+                                <label for="sales">sales/service industry</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="cooking" value="cooking">
+                                <label for="cooking">cooking/baking</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="teaching" value="teaching">
+                                <label for="teaching">teaching/tutoring</label>
+                                <br>
+                                <input type="checkbox" name="experience" id="art-gallery" value="art-gallery">
+                                <label for="art-gallery">art gallery experience</label>
+                                <br>
+                            </div>
                             <input type="submit">
                         </div>
                     </div><!--.row-->
@@ -176,8 +181,8 @@
         </section>
 
         <footer>
-            <div class="divider"></div>
-            <div class="container">
+            <hr class="divider">
+            <div class="container footer-heading-lg">
                 <div class="row">
                     <div class="col-md-3 col-sm-3">
                         <p>Contact</p>
@@ -195,41 +200,41 @@
             </div>
             <!--.container-->
 
-            <div class="divider"></div>
+            <hr class="divider">
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Contact</p>
                         <p>
                             Riverside Art Center
                             <br> 3 W Auglaize St.
                             <br> Wapakoneta, OH. 45895
                         </p>
-                        <p id="social-icons">
-                            <span class="fa fa-facebook-square"></span>
-                            <span class="fa fa-twitter-square"></span>
-                            <span class="fa fa-google-plus-square"></span>
-                            <span class="fa fa-youtube-square"></span>
-                            <span class="fa fa-instagram"></span>
+                        <p>
+                            419-738-2524
+                            <br><a href="mailto:eventsrac@gmail.com?subject=From%20Website%20Contact%20page">riversideartcenter@gmail.com</a>
                         </p>
+
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Mailing Address</p>
                         <p>
                             Riverside Art Center
                             <br> PO Box 37
                             <br> Wapakoneta, OH. 45895
                         </p>
-                        <p>riversideartcenter@gmail.com</p>
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Gallery Hours</p>
                         <p>
                             Wednesday - Friday
                             <br> 10am - 4pm
                             <br> Sat 12pm - 4pm
                         </p>
-                        <p>419-738-2524</p>
+
                     </div>
-                    <div class="col-md-3 col-sm-3">
+                    <div class="col-sm-3">
                         <div id="subscribe-thankyou">
                             <p>Thank You</p>
                         </div>
@@ -249,6 +254,18 @@
 
                     </div>
                 </div>
+                <!--.row-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p id="social-icons">
+                            <span class="fa fa-facebook-square"></span>
+                            <span class="fa fa-twitter-square"></span>
+                            <span class="fa fa-google-plus-square"></span>
+                            <span class="fa fa-youtube-square"></span>
+                            <span class="fa fa-instagram"></span>
+                        </p>
+                    </div>
+                </div>
             </div>
             <!--.container-->
 
@@ -260,49 +277,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js//myscripts.js"></script> -->
-    <!-- Slick Slider -->
-    <!--  <script type="text/javascript" src="slick/slick.min.js"></script> 
-    <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slider').slick({
-//              autoplay: true,
-              arrows: true,
-              dots: true
-          });
-        });
-  </script>  -- not needed for form page  -->
-    <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/2.8/jquery.liveaddress.min.js"></script>
-    <script>
-        var ss = jQuery.LiveAddress({
-            key: '5640108848371823003',
-            waitForStreet: true,
-            debug: true
-        });
-    </script>
-    <!-- <script>jQuery.LiveAddress("5640108848371823003");</script>-->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-    <script>
-        // just for the demos, avoids form submit
-        jQuery.validator.setDefaults({
-            debug: true,
-            success: "valid"
-        });
-        $("#myform").validate({
-            rules: {
-                field: {
-                    required: true,
-                    creditcard: true
-                }
-            }
-        });
-    </script>
-    <script src="js/live-address.js"></script>
+
     <script src="js/subscribe-thankyou.js"></script>
-
-
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
+    <script>
+        $(function () {
+            $('#menu').slicknav();
+        });
+    </script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@ body {
     font-family: 'Modern20', serif;
     padding-bottom: 20px;
 }
-p, label, select {
+p, label, input, select {
 /*    font-family: 'Roboto Slab', serif;*/
     font-family: 'Droid Sans', sans-serif;
 }
@@ -47,27 +47,7 @@ a.active {
 .page h1 > a:hover {
     color: #000;
 }
-.button {
-    width: 100px;
-    display: inline-block;
-    text-align: center;
-    padding: 3px 22px;
-    border: 1px solid #888;
-    border-radius: 4px;
-    cursor: pointer;
 
-    background: -webkit-linear-gradient(#fff, #ddd); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#fff, #ddd); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#fff, #ddd); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#fff, #ddd); /* Standard syntax */
-}
-.button:active {
-    border: 1px solid #555;
-    background: -webkit-linear-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#ddd, #fff); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#ddd, #fff); /* Standard syntax */
-}
 
 
 
@@ -325,21 +305,64 @@ x.info-box {
     margin-bottom: 40px;
 
 }
-
 #donate .volunteer {
     text-align: center;
+}
+#donate .button:hover {
+    color: #000;
+}
+#donate .button {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 3px 22px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    cursor: pointer;
+
+    background: -webkit-linear-gradient(#fff, #ddd); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#fff, #ddd); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#fff, #ddd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#fff, #ddd); /* Standard syntax */
+}
+#donate .button:active {
+    border: 1px solid #555;
+    background: -webkit-linear-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ddd, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ddd, #fff); /* Standard syntax */
 }
 /**********************
   Forms
  **********************/
 label {
     float: left;
-    width: 8em;
+    width: 10em;
     text-align: right;
+    font-size: 1.2em;
 }
+.required {
+    color: #bc2c2c;
+}
+
 input, select {
     margin-left: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    width: 20em;
+    xborder-radius: 3px;
+}
+input:required:focus:invalid {
+    outline: 1px solid #bc2c2c;
+}
+input:required:valid {
+    border: 1px solid #0a0;
+}
+input[type="submit"] {
+    width: 10em;
+    margin: 1em 0 0 10.8em;
+    padding: 8px 0px;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 input[type=checkbox] {
     margin-left: 0;
@@ -354,10 +377,65 @@ select {
     width: 10.8em;
     height: 2em;
 }
+.form-pi {
+    padding: 2em 0;
+}
+#donate-form .form-pi input:last-of-type {
+    width: 5em;
+    padding-left: 1em;
+}
+#donate-form .form-pi label[for="amount"]::after {
+    content: "$";
+    position: absolute;
+    left: 200px;
+    color: #888;
+}
+#donate-form .form-pi #amount + span::after {
+    content: ".00";
+    font-size: 1.1em;
+    position: relative;
+    left: 5px;
+    color: #888;
+}
+.payment-method {
+    padding: 2em 0;
+}
 .credit-card-logo {
     width: 50px;
     height: 30px;
 }
+.payment-method .credit-card-type {
+    padding: 1em 0 2em;
+}
+.payment-method .credit-card-type label {
+    float: none;
+    margin-right: 1.4em;
+}
+.payment-method input[type="radio"] {
+    margin-left: 0;
+    width: 1em;
+}
+.payment-method input#credit-card-number,
+.payment-method input#cvv-number,
+.payment-method select {
+    width: 12em;
+}
+
+.volunteer-form-checkboxes p {
+    font-size: 1.2em;
+}
+.volunteer-form-checkboxes label {
+    float: none;
+    margin-right: 1.4em;
+    
+}
+.volunteer-form-checkboxes input {
+    margin-left: 10.5em;
+    width: 1em;
+    float: none;
+}
+
+
 /**********************
   Footer
  **********************/

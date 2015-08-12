@@ -84,126 +84,238 @@
                 <p>Donate now with the easy and secure form below:</p>
             </div>
             <hr class="heading-divider">
-            
+
             <form action="#" method="post">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <label for="fname">*First Name:</label>
-                            <input type="text" maxlength="50" id="fname" name="fname" autofocus required>
-                            <br>
-                            <label for="mname">Middle Name:</label>
-                            <input type="text" maxlength="50" id="mname" name="mname" >
-                            <br>
-                            <label for="lname">*Last Name</label>
-                            <input type="text" maxlength="50" id="lname" name="lname" required>
-                            <br>
-                            <label for="street1">*Street 1:</label>
-                            <input type="address" id="street1" name="street1" required>
-                            <br>
-                            <label for="street2">Street 2:</label>
-                            <input type="address" id="street2" name="street2">
-                            <br>
-                            <label for="city">*City:</label>
-                            <input type="text" id="city" name="city" required>
-                            <br>
-                            <label for="state">*State/Provence:</label>
-                            <input type="text" id="state" name="state" required>
-                            <br>
-                            <label for="zip">*ZIP Postal Code:</label>
-                            <input type="text" id="zip" name="zip" required>
-                            <br>
-                            <label for="phone">Phone Number:</label>
-                            <input type="text" id="phone" name="phone">
-                            <br>
-                            <label for="email">*Email Address:</label>
-                            <input type="text" id="email" name="email" required>
-                            <br>
-                            
-                            <label for="amount">Please select your donation amount:</label>
-                            <select id="amount" name="amount">
-                                <option value="10">$10</option>
-                                <option value="20">$20</option>
-                                <option value="50">$50</option>
-                                <option value="100">$100</option>
-                            </select>
+                            <div class="form-pi">
+                                <label for="fname"><span class="required">*</span>First Name:</label>
+                                <input type="text" maxlength="50" id="fname" name="fname" title="Your first name is required" autofocus required>
+                                <br>
+                                <label for="mname">Middle Name:</label>
+                                <input type="text" maxlength="50" id="mname" name="mname">
+                                <br>
+                                <label for="lname"><span class="required">*</span>Last Name</label>
+                                <input type="text" maxlength="50" id="lname" name="lname" title="Your last name is required" required>
+                                <br>
+                                <label for="street1"><span class="required">*</span>Street 1:</label>
+                                <input type="address" id="street1" name="street1" required>
+                                <br>
+                                <label for="street2">Street 2:</label>
+                                <input type="address" id="street2" name="street2">
+                                <br>
+                                <label for="city"><span class="required">*</span>City:</label>
+                                <input type="text" id="city" name="city" required>
+                                <br>
+                                <label for="state"><span class="required">*</span>State/Provence:</label>
+                                <input type="text" id="state" name="state" required>
+                                <br>
+                                <label for="zip"><span class="required">*</span>ZIP Postal Code:</label>
+                                <input type="text" id="zip" name="zip" required pattern="^[0-9]{5}(-[0-9]{4})?$">
+                                <br>
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone">
+                                <br>
+                                <label for="email"><span class="required"><span class="required">*</span></span>Email Address:</label>
+                                <input type="email" id="email" name="email" required 
+                                        pattern="[a-zA-Z0-9_-]{1}[a-zA-Z0-9.+%_-]*@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}">
+                                <br>
+
+                                <!--                            <label for="amount">Please select your donation amount:</label>-->
+                                <label for="amount">Donation amount: </label>
+                                <input type="text" id="amount" name="amount" required><span></span>
+                            </div>
+                            <!--.form-pi-->
                         </div>
-                    </div><!--.row-->
-                </div><!--.container-->
-                
+                        <!--.col-->
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.container-->
+
                 <div class="heading-divider"></div>
                 <div class="container">
                     <h2>Payment Method</h2>
                 </div>
                 <hr class="heading-divider">
-                
+
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            <input type="radio" name="card-type" id="visa" value="visa">
-                            <label for="visa"><img class="credit-card-logo"src="images/visa.gif" alt="Visa" name="visa">
-                            </label>
-                            <input type="radio" name="card-type" id="mastercard" value="mastercard">
-                            <label for="mastercard"><img class="credit-card-logo"src="images/mastercard.gif" alt="Mastercard" name="mastercard">
-                            </label>
-                            <input type="radio" name="card-type" id="american-express" value="american-express">
-                            <label for="american-express"><img class="credit-card-logo"src="images/amex.gif" alt="American Express" name="american-express"></label>
-                            <input type="radio" id="discover" value="discover">
-                            <label for="discover"><img class="credit-card-logo"src="images/discover.gif" alt="Discover" name="discover"></label>
-                            <br>
-                            <br>
-                            <label for="credit-card-number">*Credit Card Number:</label>
-                            <input type="text" id="credit-card-number" name="credit-card-number">
-                            <br>
-                            <label>*Expiration Date:</label>
-                            <label for="exp-month">Month:</label>
-                            <select id="exp-month" name="exp-month">
-                                <option value="1">01 - Jan</option>
-                                <option value="2">02 - Feb</option>
-                                <option value="3">03 - Mar</option>
-                                <option value="4">04 - Apr</option>
-                                <option value="5">05 - May</option>
-                                <option value="6">06 - June</option>
-                                <option value="7">07 - July</option>
-                                <option value="8">08 - Aug</option>
-                                <option value="9">09 - Sept</option>
-                                <option value="10">10 - Oct</option>
-                                <option value="11">11 - Nov</option>
-                                <option value="12">12 - Dec</option>
-                            </select>
-                            <label for="exp-year">Year:</label>
-                            <select id="exp-year" name="exp-year">
-                                <option value="2015">2015</option>
-                                <option value="2016">2016</option>
-                                <option value="2017">2017</option>
-                                <option value="2018">2018</option>
-                                <option value="2019">2019</option>
-                                <option value="2020">2020</option>
-                                <option value="2021">2021</option>
-                                <option value="2022">2022</option>
-                                <option value="2023">2023</option>
-                                <option value="2024">2024</option>
-                                <option value="2025">2025</option>
-                            </select>
-                            <br>
-                            <label for="cvv-number">*CVV Number:</label>
-                            <input type="text" id="cvv-number" name="cvv-number">
-                            <br>
-                            <input type="submit">
+                            <div class="payment-method">
+                                <div class="credit-card-type">
+                                    <input type="radio" name="card-type" id="visa" value="visa">
+                                    <label for="visa"><img class="credit-card-logo" src="images/visa.gif" alt="Visa" name="visa">
+                                    </label>
+                                    <input type="radio" name="card-type" id="mastercard" value="mastercard">
+                                    <label for="mastercard"><img class="credit-card-logo" src="images/mastercard.gif" alt="Mastercard" name="mastercard">
+                                    </label>
+                                    <input type="radio" name="card-type" id="american-express" value="american-express">
+                                    <label for="american-express"><img class="credit-card-logo" src="images/amex.gif" alt="American Express" name="american-express">
+                                    </label>
+                                    <input type="radio" id="discover" value="discover">
+                                    <label for="discover"><img class="credit-card-logo" src="images/discover.gif" alt="Discover" name="discover">
+                                    </label>
+                                </div><!--.credit-card-type-->
+                                <div class="credit-card-info">
+                                    <label for="credit-card-number"><span class="required">*</span>Credit Card Number:</label>
+                                    <input type="text" id="credit-card-number" name="credit-card-number" required pattern="^[ 0-9-]{13,19}">
+                                    <br>
+                                    <label for="exp-month exp-year"><span class="required">*</span>Expiration Date:</label>
+                                    <select id="exp-month" name="exp-month">
+                                        <option>- Month -</option>
+                                        <option value="1">01 - Jan</option>
+                                        <option value="2">02 - Feb</option>
+                                        <option value="3">03 - Mar</option>
+                                        <option value="4">04 - Apr</option>
+                                        <option value="5">05 - May</option>
+                                        <option value="6">06 - June</option>
+                                        <option value="7">07 - July</option>
+                                        <option value="8">08 - Aug</option>
+                                        <option value="9">09 - Sept</option>
+                                        <option value="10">10 - Oct</option>
+                                        <option value="11">11 - Nov</option>
+                                        <option value="12">12 - Dec</option>
+                                    </select>
+                                    <select id="exp-year" name="exp-year">
+                                        <option>- Year -</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                    </select>
+                                    <br>
+                                    <label for="cvv-number"><span class="required">*</span>CVV Number:</label>
+                                    <input type="text" id="cvv-number" name="cvv-number">
+                                    <br>
+                                </div>
+                                <input type="submit" id="donate-submit">
+                                
+                            </div>
+                            <!--.payment-->
                         </div>
-                    </div><!--.row-->
-                </div><!--.container-->
+                        <!--.col-->
+                    </div>
+                    <!--.row-->
+                </div>
+                <!--.container-->
             </form>
 
         </section>
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
-           
+        <footer>
+            <hr class="divider">
+            <div class="container footer-heading-lg">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3">
+                        <p>Contact</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Mailing Address</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Gallery Hours</p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <p>Subscribe</p>
+                    </div>
+                </div>
+            </div>
+            <!--.container-->
+
+            <hr class="divider">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Contact</p>
+                        <p>
+                            Riverside Art Center
+                            <br> 3 W Auglaize St.
+                            <br> Wapakoneta, OH. 45895
+                        </p>
+                        <p>
+                            419-738-2524
+                            <br><a href="mailto:eventsrac@gmail.com?subject=From%20Website%20Contact%20page">riversideartcenter@gmail.com</a>
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Mailing Address</p>
+                        <p>
+                            Riverside Art Center
+                            <br> PO Box 37
+                            <br> Wapakoneta, OH. 45895
+                        </p>
+                    </div>
+                    <div class="col-sm-3">
+                        <p class="footer-heading">Gallery Hours</p>
+                        <p>
+                            Wednesday - Friday
+                            <br> 10am - 4pm
+                            <br> Sat 12pm - 4pm
+                        </p>
+
+                    </div>
+                    <div class="col-sm-3">
+                        <div id="subscribe-thankyou">
+                            <p>Thank You</p>
+                        </div>
+                        <form id="subscribe-form" action="#">
+                            <div class="field">
+                                <input type="text" id="fname" placeholder="First Name">
+                            </div>
+                            <div class="field">
+                                <input type="text" id="lname" placeholder="Last Name">
+                            </div>
+                            <div class="field">
+                                <input type="text" id="email" placeholder="Email Address">
+                            </div>
+                            <button id="subscribe-submit" type="submit"><span class="fa fa-chevron-right"></span>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+                <!--.row-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p id="social-icons">
+                            <span class="fa fa-facebook-square"></span>
+                            <span class="fa fa-twitter-square"></span>
+                            <span class="fa fa-google-plus-square"></span>
+                            <span class="fa fa-youtube-square"></span>
+                            <span class="fa fa-instagram"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--.container-->
+
+        </footer>
+
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <script src="js/subscribe-thankyou.js"></script>
+    <script src="SlickNav/jquery.slicknav.min.js"></script>
+    <script>
+        $(function () {
+            $('#menu').slicknav();
+        });
+    </script>
+</body>
+
+</html>
