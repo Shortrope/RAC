@@ -79,7 +79,7 @@
             <div class="container">
                 <h2>Donate Form</h2>
             </div>
-            <div class="heading-divider"></div>
+            <hr class="heading-divider">
             <div class="container">
                 <p>Donate now with the easy and secure form below:</p>
             </div>
@@ -88,21 +88,16 @@
             <form action="#" method="post">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-3">
-                            <label for="fname">*First Name:</label><br>
-                            <input type="text" maxlength="50" id="fname" name="fname" autofocus required>
-                        </div>
-                        <div class="col-sm-3">
-                            <label for="mname">Middle Name:</label><br>
-                            <input type="text" maxlength="50" id="mname" name="mname" >
-                        </div>
-                        <div class="col-sm-3">
-                            <label for="lname">*Last Name</label><br>
-                            <input type="text" maxlength="50" id="lname" name="lname" required>
-                        </div>
-                    </div><!--.row-->
-                    <div class="row">
                         <div class="col-sm-12">
+                            <label for="fname">*First Name:</label>
+                            <input type="text" maxlength="50" id="fname" name="fname" autofocus required>
+                            <br>
+                            <label for="mname">Middle Name:</label>
+                            <input type="text" maxlength="50" id="mname" name="mname" >
+                            <br>
+                            <label for="lname">*Last Name</label>
+                            <input type="text" maxlength="50" id="lname" name="lname" required>
+                            <br>
                             <label for="street1">*Street 1:</label>
                             <input type="address" id="street1" name="street1" required>
                             <br>
@@ -124,11 +119,14 @@
                             <label for="email">*Email Address:</label>
                             <input type="text" id="email" name="email" required>
                             <br>
-                            <input type="checkbox" id="receive-email" name="receive-email">
-                            <label for="receive-email">Yes, I would like to receive email communication from the Association.</label>
-                            <br>
-                            <input type="checkbox" id="remember-me" name="remember-me">
-                            <label for="remember-me">Remember me.</label>
+                            
+                            <label for="amount">Please select your donation amount:</label>
+                            <select id="amount" name="amount">
+                                <option value="10">$10</option>
+                                <option value="20">$20</option>
+                                <option value="50">$50</option>
+                                <option value="100">$100</option>
+                            </select>
                         </div>
                     </div><!--.row-->
                 </div><!--.container-->
@@ -142,102 +140,40 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
-                            
-                        </div>
-                    </div><!--.row-->
-                </div><!--.container-->
-            </form>
-            
-            
-            
-            
-
-
-
-        </section>
-        
-        
-        
-        
-        
-        
-        
-        
-        <section>
-            <!-- w/text areas for name, 
-email, 
-phone, 
-address, 
-donation amount, 
-payment method, 
-and “Process my Donation” submit button.>
-
-You can also [download] this form and mail it with your check or money order at [link to contact or just list address, if room]
-
-We would be happy to answer any questions you still may have. Contact RAC today at (#) or send us an email [ subject=”Donor”]
-
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-            <div class="form-content">
-                <fieldset>
-                    <legend>Payment Method</legend>
-                    <div id="responsive_payment_typecc_type_row" class="form-row form-radio-array">
-
-
-                        <fieldset>
                             <input type="radio" name="card-type" id="visa" value="visa">
-                            <label for="visa" accesskey="I"><img src="assets/visa_small.gif" alt="Visa" name="visa" />
+                            <label for="visa"><img class="credit-card-logo"src="images/visa.gif" alt="Visa" name="visa">
                             </label>
                             <input type="radio" name="card-type" id="mastercard" value="mastercard">
-                            <label for="mastercard" accesskey="O"><img src="assets/mastercd_small.gif" alt="Mastercard" name="mastercard" />
+                            <label for="mastercard"><img class="credit-card-logo"src="images/mastercard.gif" alt="Mastercard" name="mastercard">
                             </label>
                             <input type="radio" name="card-type" id="american-express" value="american-express">
-                            <label for="american-express" accesskey="P"><img src="assets/amex_small.gif" alt="American Express" name="american-express" />
-                            </label>
+                            <label for="american-express"><img class="credit-card-logo"src="images/amex.gif" alt="American Express" name="american-express"></label>
                             <input type="radio" id="discover" value="discover">
-                            <label for="discover"><img src="assets/discovercard_sm.gif" alt="Discover" name="discover" />
-                            </label>
-
-
-                            <h3>Credit Card Type:</h3>
-                            <!-- BEGIN CARD VALIDATOR -->
-                            <form id="myform">
-                                <label for="field">Required, creditcard (try 446-667-651): </label>
-                                <input class="left" id="field" name="field">
-                                <br/>
-                                <input type="submit" value="Validate!">
-                            </form>
-                        </fieldset>
-
-                    </div>
-            </div>
-            <div id="responsive_payment_typecc_exp_date_row" class="form-row form-date">
-
-                <div class="form-content">
-                    <label for="responsive_payment_typecc_exp_date_MONTH">
-                        <span class="label-text">Expiration Date:</span><span class="aural-only">Select month of credit card</span>
-                    </label>
-                    <label for="responsive_payment_typecc_exp_date_YEAR"><span class="aural-only">Select Expiration Year</span>
-                    </label>
-                    <div class="date-input-container">
-
-                        <fieldset class="cardExpGroup">
-                            <select name="cc-month" id="cc-month" onChange="fire_obs_comp_event('responsive_payment_typecc_exp_date_MONTH', this)">
-                                <option value="1">01</option>
-                                <option value="2">02</option>
-                                <option value="3">03</option>
-                                <option value="4">04</option>
-                                <option value="5">05</option>
-                                <option value="6">06</option>
-                                <option value="7">07</option>
-                                <option value="8" selected="selected">08</option>
-                                <option value="9">09</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
+                            <label for="discover"><img class="credit-card-logo"src="images/discover.gif" alt="Discover" name="discover"></label>
+                            <br>
+                            <br>
+                            <label for="credit-card-number">*Credit Card Number:</label>
+                            <input type="text" id="credit-card-number" name="credit-card-number">
+                            <br>
+                            <label>*Expiration Date:</label>
+                            <label for="exp-month">Month:</label>
+                            <select id="exp-month" name="exp-month">
+                                <option value="1">01 - Jan</option>
+                                <option value="2">02 - Feb</option>
+                                <option value="3">03 - Mar</option>
+                                <option value="4">04 - Apr</option>
+                                <option value="5">05 - May</option>
+                                <option value="6">06 - June</option>
+                                <option value="7">07 - July</option>
+                                <option value="8">08 - Aug</option>
+                                <option value="9">09 - Sept</option>
+                                <option value="10">10 - Oct</option>
+                                <option value="11">11 - Nov</option>
+                                <option value="12">12 - Dec</option>
                             </select>
-                            <select name="responsive_payment_typecc_exp_date_YEAR" id="responsive_payment_typecc_exp_date_YEAR" onChange="fire_obs_comp_event('responsive_payment_typecc_exp_date_YEAR', this)">
-                                <option value="2015" selected="selected">2015</option>
+                            <label for="exp-year">Year:</label>
+                            <select id="exp-year" name="exp-year">
+                                <option value="2015">2015</option>
                                 <option value="2016">2016</option>
                                 <option value="2017">2017</option>
                                 <option value="2018">2018</option>
@@ -248,374 +184,26 @@ We would be happy to answer any questions you still may have. Contact RAC today 
                                 <option value="2023">2023</option>
                                 <option value="2024">2024</option>
                                 <option value="2025">2025</option>
-
                             </select>
-                        </fieldset>
-                        <div>
-                            <input type="hidden" name="responsive_payment_typecc_exp_date_DAY" id="responsive_payment_typecc_exp_date_DAY" value="1" />
-                            <script type="text/javascript">
-                                <!--
-                                var comp1 = new ObservableComponent('responsive_payment_typecc_exp_date_MONTH', '');
-                                comp1.hide = function (_hidden) {
-                                    var _display = _hidden ? 'none' : '';
-                                    set_display('responsive_payment_typecc_exp_date_Row', _display);
-                                    this.disable_submit_flag(_hidden);
-                                }
-                                var comp2 = new ObservableComponent('responsive_payment_typecc_exp_date_YEAR', '');
-                                comp2.hide = function (_hidden) {
-                                        var _display = _hidden ? 'none' : '';
-                                        set_display('responsive_payment_typecc_exp_date_Row', _display);
-                                        this.disable_submit_flag(_hidden);
-                                    }
-                                    //-->
-                            </script>
-                            <noscript>&nbsp;</noscript>
+                            <br>
+                            <label for="cvv-number">*CVV Number:</label>
+                            <input type="text" id="cvv-number" name="cvv-number">
+                            <br>
+                            <input type="submit">
                         </div>
-                        <input type="hidden" name="responsive_payment_typecc_exp_datesubmit" id="responsive_payment_typecc_exp_datesubmit" value="true" />
-                        <script type="text/javascript">
-                            var comp = new ObservableComponent('responsive_payment_typecc_exp_date', 'input');
-                            comp.hide = function (_hidden) {
-                                var _display = _hidden ? 'none' : '';
-                                set_display('responsive_payment_typecc_exp_date_row', _display);
-                                disable_submit_flag('responsive_payment_typecc_exp_datesubmit', _hidden);
-                            }
-                            comp.disable = function (_disabled) {
-                                disable_element('responsive_payment_typecc_exp_date_MONTH', _disabled);
-                                disable_element('responsive_payment_typecc_exp_date_DAY', _disabled);
-                                disable_element('responsive_payment_typecc_exp_date_YEAR', _disabled);
-                                disable_element('responsive_payment_typecc_exp_date_HOUR12', _disabled);
-                                disable_element('responsive_payment_typecc_exp_date_HOUR24', _disabled); //For UK, 24 hour clock used
-                                disable_element('responsive_payment_typecc_exp_date_MINUTE', _disabled);
-                                disable_element('responsive_payment_typecc_exp_date_AMPM', _disabled);
-                            }
-                        </script>
-                        <noscript>&nbsp;</noscript>
-                    </div>
-                </div>
+                    </div><!--.row-->
+                </div><!--.container-->
+            </form>
 
-                <div id="responsive_payment_typecc_cvv_row" class="form-row form-text cvv-input">
-                    <div class="form-content">
-                        <label for="responsive_payment_typecc_cvvname">
-                            CVV Number:
-                        </label>
-                        <input type="number" name="responsive_payment_typecc_cvvname" id="responsive_payment_typecc_cvvname" value="" maxlength="4" autocomplete="off" required/>
-                        <input type="hidden" name="responsive_payment_typecc_cvvsubmit" id="responsive_payment_typecc_cvvsubmit" value="true" />
-                        <script type="text/javascript">
-                            var comp = new ObservableComponent('responsive_payment_typecc_cvv', 'name');
-                            comp.hide = function (_hidden) {
-                                var _display = _hidden ? 'none' : '';
-                                set_display('responsive_payment_typecc_cvv_row', _display);
-                                this.disable_submit_flag(_hidden);
-                            }
-                        </script>
-                        <noscript>&nbsp;</noscript>
-                    </div>
-                </div>
-
-            </div>
-
-            </div>
-            <!-- BEGIN DOLLAR AMOUNT -->
-            <div class="input-group">
-                <label for="donation-amount">Donation Amount:</label>
-                <br>
-                <span class="input-group-addon">$</span>
-                <input type="text" class="form-control" id="donation-amount" aria-label="Amount (to the nearest dollar)">
-                <span class="input-group-addon">.00</span>
-            </div>
-
-            <!-- BEGIN ASSIGNMENT 6 -->
-
-
-
-
-            <label for="cosize" accesskey="A">Company Size:</label>
-            <select name="cosize" id="cosize" value="1-10">
-                <option value="1-10">1-10</option>
-                <option value="11-50">11-50</option>
-                <option value="51-499">51-499</option>
-                <option value="500+">500+</option>
-            </select>
-            <hr>
-
-            <label for="how-hear" accesskey="S">How did you hear about us?</label>
-            <select name="how-hear" id="how-hear" size="5">
-                <option value="school">Summer School</option>
-                <option value="tv">Radio Ad</option>
-                <option value="tv">Television Ad</option>
-                <option value="mag">Magazine Ad</option>
-                <option value="internet">Internet Search</option>
-                <option value="word">Word of Mouth</option>
-                <option value="other">Other</option>
-            </select>
-            <hr>
-
-            <label for="questions" accesskey="D">Questions/Comments?</label>
-            <textarea name="questions" id="questions" rows="3" class="right"></textarea>
-            <hr>
-            <button type="submit" accesskey="F">SUBMIT FORM</button>
-
-
-            <!-- BEGIN ADDRESS VALIDATOR -->
-            <label for="fname"></label>
-            <input type="text" maxlength="50" id="fname" placeholder="First Name" autofocus required>
-            <label for="lname"></label>
-            <input type="text" maxlength="50" id="lname" placeholder="Last Name" autofocus required>
-            <label for="phone" placeholder="Phone Number"></label>
-            <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phone" title="Please format: 999-999-9999" required>
-            <label for="email" placeholder="Email Address"></label>
-            <input type="email" pattern=" /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" id="email" title="Please format: name@email.com" required>
-            <input type="address" id="street" name="street" placeholder="Street">
-            <br>
-            <input type="text" id="city" name="city" placeholder="City">
-            <br>
-            <input type="text" id="state" name="state" placeholder="State">
-            <br>
-            <input type="text" id="ZIP" name="ZIP" placeholder="ZIP">
-            <br>
-
-
-            <button id="subscribe-submit" type="submit"><span class="fa fa-chevron-right"></span>
-            </button>
-
-
-
-            <div class="col-md-3 col-sm-3"></div>
-            </div>
-            </div>
-
-            <section class="container">
-                <h2>Volunteer</h2>
-            </section>
-
-            <div class="heading-divider"></div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12">
-                        <p class="indent"> We want to thank our volunteers for being a vital part of our organization. As part of the RAC family, our desire is to help you grow as an important member of our local community. Your willingness to volunteer helps us be good stewards of our donated resources, and it allows us to continue the nonprofit status for the art center.</p>
-                        <ul>Our volunteer opportunities include: ------------------------------------------style ul
-                            <li>Gallery Attendant: the more volunteer Attendants we have, the more times the gallery can be open to the public!</li>
-                            <li>Event Committee: set up tables and refreshments, take photos, greet patrons.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-            <form name="contact" method="post">
-
-
-                <label>Please indicate if you have experience with any of the following:</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">data entry</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">telephone operation</label>
-                <br>
-                <input type="checkbox" name="product" id="vconvert" value="vconvert">
-                <label for="vconvert" accesskey="Y">desktop/print publishing</label>
-                <br>
-                <input type="checkbox" name="product" id="vretain" value="vretain">
-                <label for="vretain" accesskey="U">bookkeeping</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">graphic design</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">professional photography</label>
-                <br>
-                <input type="checkbox" name="product" id="vconvert" value="vconvert">
-                <label for="vconvert" accesskey="Y">web design/maintenance</label>
-                <br>
-                <input type="checkbox" name="product" id="vretain" value="vretain">
-                <label for="vretain" accesskey="U">writing/editing</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">fundraising</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">event planning/promotion</label>
-                <br>
-                <input type="checkbox" name="product" id="vconvert" value="vconvert">
-                <label for="vconvert" accesskey="Y">public relations</label>
-                <br>
-                <input type="checkbox" name="product" id="vretain" value="vretain">
-                <label for="vretain" accesskey="U">sales/service industry</label>
-                <br>
-                <input type="checkbox" name="product" id="vprospect" value="vprospect">
-                <label for="vprospect" accesskey="T">cooking/baking</label>
-                <br>
-                <input type="checkbox" name="product" id="vconvert" value="vconvert">
-                <label for="vconvert" accesskey="Y">teaching/tutoring</label>
-                <br>
-                <input type="checkbox" name="product" id="vretain" value="vretain">
-                <label for="vretain" accesskey="U">art gallery experience</label>
-                <br>
-
-
-
-
-
-
-                <!--  <div class="heading-divider"></div>   
-            <section class="container show-boxes">
-                <div class="row">
-                    <div class="col-md-5 col-md-offset-1 col-sm-6">
-                        <div class="box">
-                            <img src="images/class3.jpg" alt="#">
-                            <h4>Class for Kids: Scrapbook II</h4>
-                            <p>Aug 16th, 6-9pm</p>
-                        </div>
-                    </div>
-                   
-                    <div class="col-md-5 col-sm-6 ">
-                        <div class="box">
-                            <img src="images/class4.jpg" alt="#">
-                            <h4>Class for Kids: Clay! Clay! Clay!</h4>
-                            <p>June 12th - August 21st</p>
-                        </div>
-                    </div>
-                </div>   .row
-            </section>    .container  save for image template -->
-
-                <div class="heading-divider"></div>
-                <section class="container">
-                    <h2>Full Events Calendar</h2>
-                </section>
-                <div class="heading-divider"></div>
         </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
 
-
-        <footer>
-            <div class="divider"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <p>Contact</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <p>Mailing Address</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <p>Gallery Hours</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <p>Subscribe</p>
-                    </div>
-                </div>
-            </div>
-            <!--.container-->
-
-            <div class="divider"></div>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3">
-                        <p>
-                            Riverside Art Center
-                            <br> 3 W Auglaize St.
-                            <br> Wapakoneta, OH. 45895
-                        </p>
-                        <p id="social-icons">
-                            <span class="fa fa-facebook-square"></span>
-                            <span class="fa fa-twitter-square"></span>
-                            <span class="fa fa-google-plus-square"></span>
-                            <span class="fa fa-youtube-square"></span>
-                            <span class="fa fa-instagram"></span>
-                        </p>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <p>
-                            Riverside Art Center
-                            <br> PO Box 37
-                            <br> Wapakoneta, OH. 45895
-                        </p>
-                        <p>riversideartcenter@gmail.com</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <p>
-                            Wednesday - Friday
-                            <br> 10am - 4pm
-                            <br> Sat 12pm - 4pm
-                        </p>
-                        <p>419-738-2524</p>
-                    </div>
-                    <div class="col-md-3 col-sm-3">
-                        <div id="subscribe-thankyou">
-                            <p>Thank You</p>
-                        </div>
-                        <form id="subscribe-form" action="#">
-                            <div class="field">
-                                <input type="text" id="fname" placeholder="First Name">
-                            </div>
-                            <div class="field">
-                                <input type="text" id="lname" placeholder="Last Name">
-                            </div>
-                            <div class="field">
-                                <input type="text" id="email" placeholder="Email Address">
-                            </div>
-                            <button id="subscribe-submit" type="submit"><span class="fa fa-chevron-right"></span>
-                            </button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-            <!--.container-->
-
-        </footer>
-
-    </main>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <script src="js//myscripts.js"></script> -->
-    <!-- Slick Slider -->
-    <!--  <script type="text/javascript" src="slick/slick.min.js"></script> 
-    <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slider').slick({
-//              autoplay: true,
-              arrows: true,
-              dots: true
-          });
-        });
-  </script>  -- not needed for form page  -->
-    <script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/2.8/jquery.liveaddress.min.js"></script>
-    <script>
-        var ss = jQuery.LiveAddress({
-            key: '5640108848371823003',
-            waitForStreet: true,
-            debug: true
-        });
-    </script>
-    <!-- <script>jQuery.LiveAddress("5640108848371823003");</script>-->
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
-    <script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
-    <script>
-        // just for the demos, avoids form submit
-        jQuery.validator.setDefaults({
-            debug: true,
-            success: "valid"
-        });
-        $("#myform").validate({
-            rules: {
-                field: {
-                    required: true,
-                    creditcard: true
-                }
-            }
-        });
-    </script>
-    <script src="js/live-address.js"></script>
-    <script src="js/subscribe-thankyou.js"></script>
-
-
-</body>
-
-</html>
+           

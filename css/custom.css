@@ -10,7 +10,7 @@ body {
     font-family: 'Modern20', serif;
     padding-bottom: 20px;
 }
-p {
+p, label, select {
 /*    font-family: 'Roboto Slab', serif;*/
     font-family: 'Droid Sans', sans-serif;
 }
@@ -328,6 +328,35 @@ x.info-box {
 
 #donate .volunteer {
     text-align: center;
+}
+/**********************
+  Forms
+ **********************/
+label {
+    float: left;
+    width: 8em;
+    text-align: right;
+}
+input, select {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+input[type=checkbox] {
+    margin-left: 0;
+    float: left;
+}
+input[type=checkbox] + label {
+    float: none;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+select {
+    width: 10.8em;
+    height: 2em;
+}
+.credit-card-logo {
+    width: 50px;
+    height: 30px;
 }
 /**********************
   Footer
