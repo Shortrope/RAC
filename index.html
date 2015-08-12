@@ -12,6 +12,7 @@
 
     <title>Riverside Art Center</title>
 
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap CSS, Grid only-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -48,6 +49,7 @@
                             </li>
                             <li><a href="artshows.html">Art Shows</a>
                                 <ul class="subnav">
+                                    <li><a href="artshows.html">Current Shows</a></li>
                                     <li><a href="past_shows.html">Past Shows</a>
                                     </li>
                                     <li><a href="childrens_shows.html">Childrens Shows</a>
@@ -56,9 +58,11 @@
                             </li>
                             <li><a href="donate.html">Donate</a>
                                 <ul class="subnav">
-                                    <li><a href="donate.html">Donate</a>
+                                    <li><a href="donate.html">Donate / Volunteer</a>
                                     </li>
-                                    <li><a href="volunteer.html">Volunteer</a>
+                                    <li><a href="donate-form.html">Donate Form</a>
+                                    </li>
+                                    <li><a href="volunteer-form.html">Volunteer Form</a>
                                     </li>
                                 </ul>
                             </li>
@@ -113,53 +117,6 @@
                 </div>
             </div>
             <!--#carousel .row-->
-            
-            
-<!--
-            <div id="info-boxes" class="row">
-
-                <div class="col-md-4 col-sm-4">
-                    <div class="box info-box">
-                        <div>
-                            <p class="icon"><span class="fa fa-pencil"></span>
-                            </p>
-                            <p class="box-heading">Classes</p>
-                        </div>
-                        <p>We offer many classes in oil and water based painting as well as pottery and...</p>
-                        <div><a class="button-link" href="classes.html">Classes</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4">
-                    <div class="box info-box">
-                        <div>
-                            <p class="icon"><span class="fa fa-gift"></span>
-                            </p>
-                            <p class="box-heading">Donate</p>
-                        </div>
-                        <p>We thank for all your support. We cannot survive with out your kindness and...</p>
-                        <div><a class="button-link" href="donate.html">Donate</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 col-sm-4">
-                    <div class="box info-box">
-                        <div>
-                            <p class="icon"><span class="fa fa-map-signs"></span>
-                            </p>
-                            <p class="box-heading">Location</p>
-                        </div>
-                        <p>We are located at 3 W. Auglaize St. Wapakoneta, OH. 45895. Our hours...</p>
-                        <div><a class="button-link" href="contact.html">Location</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
--->
-            <!--#info-boxes .row-->
 
         </section>
         <!--.container-->
@@ -268,20 +225,20 @@
 
     <!-- Slick Slider -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
-
-    <script src="js/subscribe-thankyou.js"></script>
+    <!-- slickNav -->
     <script src="SlickNav/jquery.slicknav.min.js"></script>
-
+    <!-- Launch Slick Slider and SlickNav -->
     <script type="text/javascript">
         $(document).ready(function () {
             $('.slider').slick({
                 autoplay: true,
-                arrows: true,
                 dots: true
             });
             $('#menu').slicknav();
         });
     </script>
+    <!-- Footer Subscribe form -->
+    <script src="js/subscribe-thankyou.js"></script>
 </body>
 
 </html>

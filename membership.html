@@ -12,13 +12,12 @@
 
     <title>Riverside Art Center</title>
 
+    <link rel="stylesheet" href="css/normalize.css">
     <!-- Bootstrap CSS, Grid only-->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="SlickNav/slicknav.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
     <link href="css/custom.css" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -42,27 +41,39 @@
                 <div class="col-sm-7">
                     <nav>
                         <ul id="menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="index.html">Home</a>
+                            </li>
+                            <li><a href="about.html">About</a>
+                            </li>
                             <li><a href="artshows.html">Art Shows</a>
                                 <ul class="subnav">
-                                    <li><a href="past_shows.html">Past Shows</a></li>
-                                    <li><a href="childrens_shows">Childrens Shows</a></li>
+                                    <li><a href="artshows.html">Current Shows</a></li>
+                                    <li><a href="past_shows.html">Past Shows</a>
+                                    </li>
+                                    <li><a href="childrens_shows.html">Childrens Shows</a>
+                                    </li>
                                 </ul>
                             </li>
                             <li><a href="donate.html">Donate</a>
                                 <ul class="subnav">
-                                    <li><a href="donate.html">Donate</a></li>
-                                    <li><a href="volunteer.html">Volunteer</a></li>
+                                    <li><a href="donate.html">Donate / Volunteer</a>
+                                    </li>
+                                    <li><a href="donate-form.html">Donate Form</a>
+                                    </li>
+                                    <li><a href="volunteer-form.html">Volunteer Form</a>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="classes.html">Classes</a></li>
-                            <li><a href="membership.html" class="active">Membership</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="classes.html">Classes</a>
+                            </li>
+                            <li><a href="membership.html" class="active">Membership</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a>
+                            </li>
                         </ul>
                     </nav>
-                </div><!--.row-->
-            </div>
+                </div><!--.col-->
+            </div><!--.row-->
         </header><!--.container-->
         
         <div class="divider"></div>
@@ -232,14 +243,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    
-    <script src="js/subscribe-thankyou.js"></script>
+    <!-- SlickNav -->
     <script src="SlickNav/jquery.slicknav.min.js"></script>
     <script>
         $(function(){
             $('#menu').slicknav();
         });
     </script>
+    <!-- Footer Subscribe form -->
+    <script src="js/subscribe-thankyou.js"></script>
 </body>
 
 </html>
