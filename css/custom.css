@@ -291,10 +291,19 @@ header nav .subnav li {
  **********************/
 #about section img {
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: auto;
 }
 
+/**********************
+  Donate / Volunteer
+ **********************/
+.donate-image {
+    width: 100%;
+}
+#donate .volunteer {
+    text-align: center;
+}
 /**********************
   Footer
  **********************/
@@ -319,13 +328,17 @@ footer p {
 }
 footer #social-icons {
     font-size: 1.3em;
+    color: #333;
     margin-top: 0;
 }
+
+/*
 .fa-facebook-square {color: #00f;}
 .fa-twitter-square {color: #0b67fa;}
 .fa-google-plus-square {color: #b00;}
 .fa-youtube-square {color: #b00;}
 .fa-instagram {color: #2323ff;}
+*/
 
 /* Line up last line of footer text with the bottom of social-icons
    and the subscribe form */
