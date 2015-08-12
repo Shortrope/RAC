@@ -434,6 +434,15 @@ select {
     width: 1em;
     float: none;
 }
+label[for="other-experience"] {
+    margin-left: 10.8em;
+    padding-bottom: 1.5em;
+}
+#volunteer-form textarea {
+    margin-left: 13em;
+    width: 16em;
+    height: 5em;
+}
 
 
 /**********************
