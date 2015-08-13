@@ -294,6 +294,30 @@ x.info-box {
     height: auto;
 }
 
+
+/**********************
+  Contact
+ **********************/
+#contact form {
+    padding: 40px 0;
+}
+#contact form fieldset {
+    border-radius: 8px;
+    padding: 20px 0;
+}
+#contact form legend {
+    font-size: 1.4em;
+}
+
+#contact input#name,
+#contact input#email,
+#contact textarea#message {
+    width: 50%;
+}
+#contact textarea#message {
+    margin-left: 1em;
+    height: 8em;
+}
 /**********************
   Donate / Volunteer
  **********************/
@@ -434,7 +458,7 @@ select {
     width: 1em;
     float: none;
 }
-label[for="other-experience"] {
+#volunteer-form label[for="other-experience"] {
     margin-left: 10.8em;
     padding-bottom: 1.5em;
 }
@@ -443,6 +467,7 @@ label[for="other-experience"] {
     width: 16em;
     height: 5em;
 }
+
 
 
 /**********************
@@ -583,6 +608,31 @@ hr {
     #about section img,
     #contact section img {
         display: none;
+    }
+    
+    #classes .col-xsm-12 {
+        width: 100%;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #ccc;
+    }
+    #classes .box {
+        margin-top: 8px;
+    }
+    #classes .box > img {
+        float: left;
+        width: 30%;
+        margin: 0 16px 0 0;
+    }
+    #contact label {
+        display: block;
+        float: none;
+        text-align: left;
+        margin-left: 1em;
+    }
+    #contact input#name,
+    #contact input#email,
+    #contact textarea#message {
+        width: 90%;
     }
     
 }
