@@ -44,7 +44,7 @@ a:hover, a:active {
 a.active {
     color: #ff7000;
 }
-.page h1 > a:hover {
+h1 > a:hover {
     color: #000;
 }
 
@@ -59,7 +59,7 @@ a.active {
     border-bottom: 1px solid #aaa;
 }
 .boxes.last {
-    border-bottom: 0px;
+    border-bottom: 0;
 }
 .box {
     margin: 20px 0;
@@ -115,7 +115,7 @@ header nav li {
 }
 header nav li .subnav {
     display: none;
-    height: 0px;
+    height: 0;
     overflow: hidden;
     padding-top: 6px;
     transition: all 2s ease-out 1s;
@@ -130,6 +130,7 @@ header nav li:hover .subnav {
 header nav .subnav li {
     display: block;
     float: none;
+    background: #fff;
     background: rgba(255,255,255, 0.85);
     border-radius: 3px;
     padding: 4px 4px 2px 14px;
@@ -162,75 +163,12 @@ header nav .subnav li {
     height: 120px;
     padding: 0 0 10px 20px;
     position: absolute;
-    bottom: 0px;
-}
-.slider .slider-item div p {
+    bottom: 0;
 }
 .slider .heading-text {
     font-size: 1.5em;
     margin-bottom: 0;
 }
-
-
-/**********************
-  Home Page
- **********************/
-x#info-boxes {
-/*    margin-bottom: 30px;*/
-}
-x.info-box {
-/*    position: relative;*/
-    text-align: center;
-}
-/*
-.info-box .info-box-image {
-    position: absolute;
-        top: -110px;
-        left: 2px;
-    z-index: -1
-}
-*/
-/*
-.info-box .fa {
-    font-size: 6em;
-    color: #555;
-}
-#info-boxes .info-box .box-heading {
-    margin: 10px 0 0px 0;
-    font-family: Modern20, serif;
-    font-size: 3em;
-    color: #333;
-}
-
-#info-boxes .info-box p {
-    font-size: 0.8em;
-    font-weight: bold;
-    padding: 2px 24px;
-}
-.info-box .button-link {
-    display: inline-block;
-    font-size: 1.6em;
-    background: #fff;
-    width: 150px;
-    margin-top: 20px;
-    padding: 3px 12px;
-    border: 1px solid #888;
-    border-radius: 8px;
-}
-.info-box a {
-    text-align: center;
-}
-.info-box a:hover {
-    font-weight: bold;
-    background: #e3e3e3;
-    border: 1px solid #222;
-}
-.info-box-button-icon {
-    position: absolute;
-        bottom: 3px;
-        right: 20px;
-}
-*/
 
 
 /**********************
@@ -266,18 +204,18 @@ x.info-box {
     color: #ff7000;
 }
 #past-shows h3:focus {
-    outline: 0px solid;
+    outline: 0 solid;
     color: #ff7000;
 }
 .ui-state-default {
-    border: 0px solid;
+    border: 0 solid;
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
     background: #fff;
 }
 .ui-widget-content {
     background: #fff;
-    border: 0px solid;
+    border: 0 solid;
 }
 
 
@@ -348,15 +286,15 @@ x.info-box {
     cursor: pointer;
 
     background: -webkit-linear-gradient(#fff, #ddd); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#fff, #ddd); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#fff, #ddd); /* For Firefox 3.6 to 15 */
+    background: -o-linear-gradient(#fff, #ddd); /* For Opera 11.1 to 12.0 */
     background: linear-gradient(#fff, #ddd); /* Standard syntax */
 }
 #donate .button:active {
     border: 1px solid #555;
     background: -webkit-linear-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#ddd, #fff); /* For Firefox 3.6 to 15 */
+    background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
     background: linear-gradient(#ddd, #fff); /* Standard syntax */
 }
 /**********************
@@ -376,7 +314,6 @@ input, select {
     margin-left: 1em;
     margin-bottom: 1em;
     width: 20em;
-    xborder-radius: 3px;
 }
 input:required:focus:invalid {
     outline: 1px solid #bc2c2c;
@@ -387,7 +324,7 @@ input:required:valid {
 input[type="submit"] {
     width: 10em;
     margin: 1em 0 0 10.8em;
-    padding: 8px 0px;
+    padding: 8px 0;
     font-size: 1.2em;
     font-weight: bold;
 }
@@ -533,14 +470,14 @@ footer form {
     margin-bottom: 0;
 }
 #subscribe-form input:focus {
-    outline: 0px;
+    outline: 0;
 }
 #subscribe-form button {
     background: #fff;
     border: 0 solid;
     position: absolute;
     bottom: 1px;
-    right: 0px;
+    right: 0;
 }
 
 
@@ -572,16 +509,12 @@ hr {
     color: #ff7000;
     cursor: pointer;
 }
-
-.show-images {
-    
-}
 .open {
     height: 538px;
     overflow: visible;
 }
 .closed {
-    height: 0px;
+    height: 0;
     overflow: hidden;
 }
 .arrow-right {
@@ -594,7 +527,7 @@ hr {
 }
 .arrow-down {
     display: inline-block;
-    width: 0px; 
+    width: 0; 
 	height: 0; 
 	border-top: 12px solid #444;
 	border-right: 8px solid transparent;
@@ -671,7 +604,6 @@ hr {
     }
     footer #social-icons {
         border-top: 1px solid #aaa;
-        padding-top: 18px;
         font-size: 3.2em;
         padding-top: 1em;
         margin-top: 0.5em;

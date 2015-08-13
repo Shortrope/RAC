@@ -93,20 +93,20 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-pi">
-                                <label for="fname"><span class="required">*</span>First Name:</label>
-                                <input type="text" maxlength="50" id="fname" name="fname" title="Your first name is required" autofocus required>
+                                <label for="fname-pi"><span class="required">*</span>First Name:</label>
+                                <input type="text" maxlength="50" id="fname-pi" name="fname-pi" title="Your first name is required" autofocus required>
                                 <br>
                                 <label for="mname">Middle Name:</label>
                                 <input type="text" maxlength="50" id="mname" name="mname">
                                 <br>
-                                <label for="lname"><span class="required">*</span>Last Name</label>
-                                <input type="text" maxlength="50" id="lname" name="lname" title="Your last name is required" required>
+                                <label for="lname-pi"><span class="required">*</span>Last Name</label>
+                                <input type="text" maxlength="50" id="lname-pi" name="lname-pi" title="Your last name is required" required>
                                 <br>
                                 <label for="street1"><span class="required">*</span>Street 1:</label>
-                                <input type="address" id="street1" name="street1" required>
+                                <input type="text" id="street1" name="street1" required>
                                 <br>
                                 <label for="street2">Street 2:</label>
-                                <input type="address" id="street2" name="street2">
+                                <input type="text" id="street2" name="street2">
                                 <br>
                                 <label for="city"><span class="required">*</span>City:</label>
                                 <input type="text" id="city" name="city" required>
@@ -120,8 +120,8 @@
                                 <label for="phone">Phone Number:</label>
                                 <input type="tel" id="phone" name="phone">
                                 <br>
-                                <label for="email"><span class="required"><span class="required">*</span></span>Email Address:</label>
-                                <input type="email" id="email" name="email" required 
+                                <label for="email-pi"><span class="required"><span class="required">*</span></span>Email Address:</label>
+                                <input type="email" id="email-pi" name="email-pi" required 
                                         pattern="[a-zA-Z0-9_-]{1}[a-zA-Z0-9.+%_-]*@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}">
                                 <br>
 
@@ -149,23 +149,23 @@
                             <div class="payment-method">
                                 <div class="credit-card-type">
                                     <input type="radio" name="card-type" id="visa" value="visa">
-                                    <label for="visa"><img class="credit-card-logo" src="images/visa.gif" alt="Visa" name="visa">
+                                    <label for="visa"><img class="credit-card-logo" src="images/visa.gif" alt="Visa">
                                     </label>
                                     <input type="radio" name="card-type" id="mastercard" value="mastercard">
-                                    <label for="mastercard"><img class="credit-card-logo" src="images/mastercard.gif" alt="Mastercard" name="mastercard">
+                                    <label for="mastercard"><img class="credit-card-logo" src="images/mastercard.gif" alt="Mastercard">
                                     </label>
                                     <input type="radio" name="card-type" id="american-express" value="american-express">
-                                    <label for="american-express"><img class="credit-card-logo" src="images/amex.gif" alt="American Express" name="american-express">
+                                    <label for="american-express"><img class="credit-card-logo" src="images/amex.gif" alt="American Express">
                                     </label>
                                     <input type="radio" id="discover" value="discover">
-                                    <label for="discover"><img class="credit-card-logo" src="images/discover.gif" alt="Discover" name="discover">
+                                    <label for="discover"><img class="credit-card-logo" src="images/discover.gif" alt="Discover">
                                     </label>
                                 </div><!--.credit-card-type-->
                                 <div class="credit-card-info">
                                     <label for="credit-card-number"><span class="required">*</span>Credit Card Number:</label>
                                     <input type="text" id="credit-card-number" name="credit-card-number" required pattern="^[ 0-9-]{13,19}">
                                     <br>
-                                    <label for="exp-month exp-year"><span class="required">*</span>Expiration Date:</label>
+                                    <label for="exp-month"><span class="required">*</span>Expiration Date:</label>
                                     <select id="exp-month" name="exp-month">
                                         <option>- Month -</option>
                                         <option value="1">01 - Jan</option>
