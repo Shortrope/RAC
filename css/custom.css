@@ -481,8 +481,6 @@ footer #social-icons {
 .fa-instagram {color: #2323ff;}
 */
 
-/* Line up last line of footer text with the bottom of social-icons
-   and the subscribe form */
 footer > div:nth-child(3) p:nth-child(2):not(#social-icons) {
     padding-top: 6px;
 }
@@ -490,14 +488,11 @@ footer > div:nth-child(3) p:nth-child(2):not(#social-icons) {
 footer form {
     margin: 8px;
 }
-footer form input {
-/*    font-size: 0.8em;*/
-}
 #subscribe-thankyou {
     display: none;
 }
 #subscribe-form {
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 0;
     position: relative;
 }
@@ -508,6 +503,7 @@ footer form input {
     border: 1px solid #fff;
     width: 150px;
     line-height: 1.8em;
+    margin-bottom: 0;
 }
 #subscribe-form input:focus {
     outline: 0px;
@@ -524,6 +520,9 @@ footer form input {
 /**********************
   Other
  **********************/
+#thankyou .message p {
+    font-size: 1.2em;
+}
 hr {
     margin: 0;
 }
@@ -609,13 +608,17 @@ hr {
     footer .footer-heading-lg {
         display: none;
     }
-    #subscribe-form {
+    footer #subscribe-form {
         display: none;
     }
-    #social-icons {
+    footer #social-icons {
         border-top: 1px solid #aaa;
         padding-top: 18px;
+        font-size: 3.2em;
+        padding-top: 1em;
+        margin-top: 0.5em;
     }
+    
 }
 @media (min-width: 768px) {
     
