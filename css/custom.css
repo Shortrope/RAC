@@ -94,7 +94,6 @@ header img {
 .slicknav_menu {
     display: none;
     background: #fff;
-    xfloat: right;
 }
 .slicknav_nav a {
     text-align: center;
@@ -114,15 +113,19 @@ header nav li {
     display: inline;
     margin-left: 10px;
 }
-header nav .subnav {
+header nav li .subnav {
     display: none;
+    height: 0px;
+    overflow: hidden;
     padding-top: 6px;
+    transition: all 2s ease-out 1s;
 }
 header nav li:hover .subnav {
     display: block;
     position: absolute;
     top: 8px;
     left: -58px;
+    height: 100px;
 }
 header nav .subnav li {
     display: block;
@@ -444,7 +447,6 @@ select {
 .payment-method select {
     width: 12em;
 }
-
 .volunteer-form-checkboxes p {
     font-size: 1.2em;
 }
@@ -610,18 +612,25 @@ hr {
         display: none;
     }
     
-    #classes .col-xsm-12 {
+    .col-xsm-12 {
         width: 100%;
         padding-bottom: 8px;
         border-bottom: 1px solid #ccc;
     }
-    #classes .box {
+    #classes .box,
+    #artshows .box,
+    #membership .box {
         margin-top: 8px;
     }
-    #classes .box > img {
+    #classes .box > img,
+    #artshows .box > img,
+    #membership .box > img{
         float: left;
         width: 30%;
         margin: 0 16px 0 0;
+    }
+    #contact .col-xsm-12 p {
+        text-align: center;
     }
     #contact label {
         display: block;
@@ -634,7 +643,6 @@ hr {
     #contact textarea#message {
         width: 90%;
     }
-    
 }
 
 @media (max-width: 768px) {
@@ -668,11 +676,6 @@ hr {
         padding-top: 1em;
         margin-top: 0.5em;
     }
-    
-}
-@media (min-width: 768px) {
-    
-    
 }
 @media (max-width: 992px) {
     .hidden-sm {
@@ -685,6 +688,20 @@ hr {
 		display:block;
 	}
 }
-@media (min-width: 992px) {
-  
+
+/* Used @media so I would not have to add another
+   <link rel="styleshee"> in the <head> section of every page*/
+@media print {
+    p, label, input, select {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    #home #carousel,
+    #about img,
+    #contact img,
+    #donate img,
+    #classes .box img {
+        display: none;
+    }
+    
 }
