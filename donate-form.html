@@ -122,13 +122,13 @@
                                 <label for="phone">Phone Number:</label>
                                 <input type="tel" id="phone" name="phone">
                                 <br>
-                                <label for="email-pi"><span class="required"><span class="required">*</span></span>Email Address:</label>
+                                <label for="email-pi"><span class="required">*</span>Email Address:</label>
                                 <input type="email" id="email-pi" name="email-pi" required 
                                         pattern="[a-zA-Z0-9_-]{1}[a-zA-Z0-9.+%_-]*@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}">
                                 <br>
 
                                 <!--                            <label for="amount">Please select your donation amount:</label>-->
-                                <label for="amount">Donation amount: </label>
+                                <label for="amount"><span class="required">*</span>Donation amount: </label>
                                 <input type="text" id="amount" name="amount" required><span></span>
                             </div>
                             <!--.form-pi-->
@@ -139,13 +139,10 @@
                 </div>
                 <!--.container-->
 
-                <div class="heading-divider"></div>
                 <div class="container">
                     <h2>Payment Method</h2>
-                </div>
-                <hr class="heading-divider">
+                    <hr class="heading-divider">
 
-                <div class="container">
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="payment-method">
@@ -165,7 +162,7 @@
                                 </div><!--.credit-card-type-->
                                 <div class="credit-card-info">
                                     <label for="credit-card-number"><span class="required">*</span>Credit Card Number:</label>
-                                    <input type="text" id="credit-card-number" name="credit-card-number" required pattern="^[ 0-9-]{13,19}">
+                                    <input type="text" id="credit-card-number" name="credit-card-number" required pattern="^[0-9][ 0-9-]{12,18}">
                                     <br>
                                     <label for="exp-month"><span class="required">*</span>Expiration Date:</label>
                                     <select id="exp-month" name="exp-month">
@@ -199,7 +196,7 @@
                                     </select>
                                     <br>
                                     <label for="cvv-number"><span class="required">*</span>CVV Number:</label>
-                                    <input type="text" id="cvv-number" name="cvv-number">
+                                    <input type="text" id="cvv-number" name="cvv-number" required pattern="^[0-9]{3,4}">
                                     <br>
                                 </div>
                                 <input type="submit" id="donate-submit">

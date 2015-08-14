@@ -574,7 +574,26 @@ hr {
     }
 }
 
+@media (max-width: 584px) {
+    #donate-form #exp-year {
+        margin-left: 13em;
+    }
+}
 @media (max-width: 520px) {
+    #donate-form label[for=amount] {
+        float: left;
+    }
+    #donate-form #exp-year {
+        margin-left: 1em;
+    }
+    #donate-form .credit-card-type input[type=radio] {
+        float: left;
+        position: relative;
+        top: 6px;
+    }
+    #donate-form .credit-card-type label {
+        margin: 0 0 0.8em 1.5em;
+    }
     #donate-form label,
     #volunteer-form label {
         display: block;
@@ -608,10 +627,10 @@ hr {
         padding: 8px 0;
         
     }
-    
-
 }
-    
+
+
+
 @media (max-width: 768px) {
     
     header img {
