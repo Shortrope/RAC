@@ -18,7 +18,10 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="SlickNav/slicknav.css" />
-    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.css" />
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/custom.css">
     <link href="css/print.css" rel="stylesheet" media="print">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -30,7 +33,7 @@
 </head>
 
 <body>
-    <main id="contact" class="page">
+    <main id="members-galleries" class="page gallery-page">
        
         <header class="container">
             <div class="row">
@@ -46,12 +49,12 @@
                             </li>
                             <li><a href="about.html">About</a>
                             </li>
-                            <li><a href="artshows.html">Art Shows</a>
+                            <li><a href="artshows.html" class="active">Art Shows</a>
                                 <ul class="subnav">
                                     <li><a href="artshows.html">Current Shows</a></li>
                                     <li><a href="past_shows.html">Past Shows</a>
                                     </li>
-                                    <li><a href="childrens_shows.html">Childrens Shows</a>
+                                    <li><a href="childrens_shows.html" class="active">Childrens Shows</a>
                                     </li>
                                     <li><a href="members_galleries.html">Members Galleries</a>
                                     </li>
@@ -71,7 +74,7 @@
                             </li>
                             <li><a href="membership.html">Membership</a>
                             </li>
-                            <li><a href="contact.html" class="active">Contact</a>
+                            <li><a href="contact.html">Contact</a>
                             </li>
                         </ul>
                     </nav>
@@ -79,140 +82,131 @@
             </div><!--.row-->
         </header><!--.container-->
         
-        <div class="divider"></div>
+        <hr class="divider">
         
         <section>
                
-                <div class="container">
-                    <h2 class="indent">Contact Us</h2>
-                </div>
-                <div class="heading-divider"></div>
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 box center">
-                            <img src="images/contact.jpg" alt="RAC facility">
-                        </div>
-                    </div><!--.row-->
-                </div><!--.container-->
-                <div class="heading-divider"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <p>
-                               ADDRESS:<br>
-                               RIVERSIDE ART CENTER<br>
-                               3 W. AUGLAIZE ST.<br>
-                               WAPAKONETA, OHIO 45895<br>
-                               PHONE: 419-738-2352
-                            </p>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <p>
-                               MAILING ADDRESS:<br>
-                               RIVERSIDE ART CENTER<br>
-                               PO BOX 37<br>
-                               WAPAKONETA, OHIO 45895<br>
-                               EMAIL: <a href="mailto:eventsrac@gmail.com?subject=From%20Website%20Contact%20page">riversideartcenter@gmail.com</a>
-                            </p>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <p>
-                               HOURS:<br>
-                               WEDNESDAY - FRIDAY 10am - 4pm<br>
-                               SATURDAY 12pm - 4pm
-                            </p>
-                        </div>
-                    </div><!--.row-->
-                    <div class="row">
-                        <div class="col-sm-12 col-xsm-12">
-                            <form action="thankyou.html" method="post">
-                                
-                                <fieldset><legend>Questions / Comments</legend>
-                                    <label for="name"><span class="required">*</span>Name</label>
-                                    <input type="text" maxlength="50" id="name" name="name" required>
-                                    <br>
-                                    <label for="contact-email"><span class="required">*</span>Email Address:</label>
-                                    <input type="email" id="contact-email" name="contact-email" required 
-                                           pattern="[a-zA-Z0-9_-]{1}[a-zA-Z0-9.+%_-]*@[a-zA-Z0-9._-]+\.[a-zA-Z]{2,4}">
-                                    <br>
-                                    <label for="message">Message:</label>
-                                    <textarea id="message" name="message"></textarea>
-                                    <input type="submit">
-                                </fieldset>
-                            </form>
-                        </div>
+            <div class="container">
+                <h2 class="indent">Members Galleries</h2>
+            </div>
+            <hr class="heading-divider">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <p class="indent">RAC features exhibitions of fine art created by talented artists from within our local community and elsewhere. We also hold juried art shows, shows to feature RAC Members' work, Childrens' art shows, vendor fairs, and more. Visit us at the gallery today to see these artists' spectacular creations!</p>
                     </div>
-                </div><!--.container-->
-                <div class="heading-divider"></div>
-                <div class="container">
-                    <h2 class="indent">Board of Directors</h2>
-                </div>
-                <div class="heading-divider"></div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">Jerry Sommerville</p>
-                                <p>President</p>
+                </div><!--.row-->
+            </div><!--.container-->
+            
+            <div class="container">
+                <div id="accordion">
+                   
+                    <h3 class="indent"><span class=""></span>&nbsp; John Rausch</h3>
+                        <div class="row">
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-01.jpg">
+                                        <img src="images/art-sm-01.jpg" alt="#">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">John Rausch</p>
-                                <p>Gallery Director</p>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-02.jpg">
+                                        <img src="images/art-sm-02.jpg" alt="#">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">John Rausch</p>
-                                <p>Trustee</p>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-03.jpg">
+                                        <img src="images/art-sm-03.jpg" alt="#">
+                                    </a>
+                                </div>
                             </div>
-                        </div>
+                        </div><!--.row-->
+                    <h3 class="indent"><span class=""></span>&nbsp; Anna Fisher</h3>
+                        <div class="row">
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-04.jpg">
+                                        <img src="images/art-sm-04.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-05.jpg">
+                                        <img src="images/art-sm-05.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-06.jpg">
+                                        <img src="images/art-sm-06.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!--.row-->
+
+                    <h3 class="indent"><span class=""></span>&nbsp; Michelle Walker</h3>
+                        <div class="row">
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-07.jpg">
+                                        <img src="images/art-sm-07.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-08.jpg">
+                                        <img src="images/art-sm-08.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-09.jpg">
+                                        <img src="images/art-sm-09.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!--.row-->
+                        <h3 class="indent"><span class=""></span>&nbsp; Pam &amp; Jerry Knoch</h3>
+                        <div class="row">
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-07.jpg">
+                                        <img src="images/art-sm-07.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-08.jpg">
+                                        <img src="images/art-sm-08.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xsm-12">
+                                <div class="box">
+                                    <a class="fancybox" rel="group" href="images/art-lg-09.jpg">
+                                        <img src="images/art-sm-09.jpg" alt="#">
+                                    </a>
+                                </div>
+                            </div>
+                        </div><!--.row-->
                         
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">Linda Blosser</p>
-                                <p>Vise President</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">John Rausch</p>
-                                <p>Gallery Director</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">John Rausch</p>
-                                <p>Trustee</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">Linda Blosser</p>
-                                <p>Vise President</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">John Rausch</p>
-                                <p>Gallery Director</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 col-xs-6 col-xsm-12">
-                            <div class="box center">
-                                <p class="box-heading">John Rausch</p>
-                                <p>Trustee</p>
-                            </div>
-                        </div>
-                    </div><!--.row-->
-                </div><!--.container-->
-                
-                
+                </div><!--#accordion-->
+            </div><!--.container-->
+            
+            
         </section>
-           
+        
+        
         <footer>
             <div class="divider"></div>
             <div class="container footer-heading-lg">
@@ -246,7 +240,7 @@
                         </p>
                         <p>
                             419-738-2524
-                            <br> riversideartcenter@gmail.com
+                            <br><a href="mailto:eventsrac@gmail.com?subject=From%20Website%20Contact%20page">riversideartcenter@gmail.com</a>
                         </p>
 
                     </div>
@@ -303,7 +297,6 @@
             <!--.container-->
 
         </footer>
-        
     </main>
 
 
@@ -311,15 +304,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
-    <!-- SlickNav -->
+    <!--SlickNav-->
     <script src="SlickNav/jquery.slicknav.min.js"></script>
-    <script>
-        $(function(){
+    <!--jQuery UI Accordion-->
+    <script src="js/jquery-ui.min.js"></script>
+    <!--jQuery Lightbox-->
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <!-- Launch SlickNav, Accordion, and fancybox -->
+    <script type="text/javascript">
+        $(document).ready(function() {
             $('#menu').slicknav();
+            $( "#accordion" ).accordion();
+            $(".fancybox").fancybox({
+                padding : 0,
+                arrows : true
+            });
         });
     </script>
     <!-- Footer Subscribe form -->
     <script src="js/subscribe-thankyou.js"></script>
 </body>
 
-</html>  
+</html>

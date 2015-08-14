@@ -58,9 +58,6 @@ h1 > a:hover {
     margin-bottom: 30px;
     border-bottom: 1px solid #aaa;
 }
-.boxes.last {
-    border-bottom: 0;
-}
 .box {
     margin: 20px 0;
 }
@@ -131,11 +128,10 @@ header nav .subnav li {
     display: block;
     float: none;
     background: #fff;
-    background: rgba(255,255,255, 0.85);
+    background: rgba(255,255,255, 0.9);
     border-radius: 3px;
     padding: 4px 4px 2px 14px;
-    min-height: 6px;
-    width: 145px;
+    width: 165px;
     z-index: 4;
 }
 
@@ -160,8 +156,8 @@ header nav .subnav li {
     font-size: 0.9em;
     color: #fff;
     width: 600px;
-    height: 120px;
-    padding: 0 0 10px 20px;
+    height: 100px;
+    margin-left: 20px;
     position: absolute;
     bottom: 0;
 }
@@ -190,20 +186,20 @@ header nav .subnav li {
 
 
 /**********************
-  Past Shows
+  Past and childrens Shows, members galleries
  **********************/
 /*override jquery ui accordion*/
-#past-shows h3 {
+.gallery-page h3 {
     color: #333;
     font-family: modern20, serif;
     font-size: 1.3em;
     margin: 8px 0;
     text-transform: uppercase;
 }
-#past-shows h3:hover {
+.gallery-page h3:hover {
     color: #ff7000;
 }
-#past-shows h3:focus {
+.gallery-page h3:focus {
     outline: 0 solid;
     color: #ff7000;
 }
@@ -250,8 +246,7 @@ header nav .subnav li {
     font-size: 1.4em;
 }
 
-#contact input#name,
-#contact input#email,
+#contact input,
 #contact textarea#message {
     width: 50%;
 }
@@ -273,19 +268,18 @@ header nav .subnav li {
 #donate .volunteer {
     text-align: center;
 }
-#donate .button:hover {
-    color: #000;
-}
 #donate .button {
-    width: 100px;
+    xwidth: 100px;
     display: inline-block;
     text-align: center;
-    padding: 3px 22px;
+    padding: 6px 22px;
+    margin-top: 15px;
     border: 1px solid #888;
     border-radius: 4px;
     cursor: pointer;
 
     background: -webkit-linear-gradient(#fff, #ddd); /* For Safari 5.1 to 6.0 */
+    background: -webkit-gradient(#fff, #ddd); /* For Safari 4+ aka "Old WebKit */
     background: -moz-linear-gradient(#fff, #ddd); /* For Firefox 3.6 to 15 */
     background: -o-linear-gradient(#fff, #ddd); /* For Opera 11.1 to 12.0 */
     background: linear-gradient(#fff, #ddd); /* Standard syntax */
@@ -293,9 +287,13 @@ header nav .subnav li {
 #donate .button:active {
     border: 1px solid #555;
     background: -webkit-linear-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
+    background: -webkit-gradient(#ddd, #fff); /* For Safari 5.1 to 6.0 */
     background: -moz-linear-gradient(#ddd, #fff); /* For Firefox 3.6 to 15 */
     background: -o-linear-gradient(#ddd, #fff); /* For Opera 11.1 to 12.0 */
     background: linear-gradient(#ddd, #fff); /* Standard syntax */
+}
+#donate .button:hover {
+    color: #000;
 }
 /**********************
   Forms
@@ -390,7 +388,6 @@ select {
 .volunteer-form-checkboxes label {
     float: none;
     margin-right: 1.4em;
-    
 }
 .volunteer-form-checkboxes input {
     margin-left: 10.5em;
@@ -571,13 +568,50 @@ hr {
         text-align: left;
         margin-left: 1em;
     }
-    #contact input#name,
-    #contact input#email,
+    #contact input,
     #contact textarea#message {
         width: 90%;
     }
 }
 
+@media (max-width: 520px) {
+    #donate-form label,
+    #volunteer-form label {
+        display: block;
+        float: none;
+        text-align: left;
+        margin-left: 1em;
+    }
+    .volunteer-form-checkboxes input {
+        margin: 0 1em 0 0;
+        float: left;
+        position: relative;
+        top: 6px;
+    }
+    .volunteer-form-checkboxes label {
+        margin: 0 0 0 3em;
+        width: 90%;
+        float: none;
+    }
+    #volunteer-form label[for="other-experience"] {
+        margin-left: 0;
+        padding-bottom: 0;
+    }
+    #volunteer-form textarea {
+        margin-left: 0;
+        width: 16em;
+        height: 5em;
+    }
+    input[type="submit"] {
+        width: 10em;
+        margin: 1em 0 0 1em;
+        padding: 8px 0;
+        
+    }
+    
+
+}
+    
 @media (max-width: 768px) {
     
     header img {
